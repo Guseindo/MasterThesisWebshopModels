@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tracemodel:EBEASTracelinkModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tracemodel="org.eclipse.app4mc.amalthea.example.ebeas.tracemodel">
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/component_diagram.uml#_XVvkQD7cEeemba3bmDC5IA"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_MiEe8D7fEeemba3bmDC5IA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/component_diagram.uml#_gWfzED7cEeemba3bmDC5IA"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_sYQHYD8hEee5V-8lxPeD8w"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_PLf_UD7fEeemba3bmDC5IA"/>
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_X2TzMDuFEeer__XDGGfa7g"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_X2TzMDuFEeer__XDGGfa7g"/>
+    <items href="../WebShop/01_Models/uses_cases.uml#_YlILgDxKEeeQeavaCVhKgA"/>
+  </item>
+</tracemodel:EBEASTracelinkModel>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmlns:style="http://www.eclipse.org/papyrus/infra/viewpoints/policy/style" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_tfc2IDuWEee9HKMBVHI_vw" type="PapyrusUMLSequenceDiagram" name="ApplicationStartup" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_tfc2ITuWEee9HKMBVHI_vw" type="Interaction_Shape">
+    <children xmi:type="notation:DecorationNode" xmi:id="_tfc2IjuWEee9HKMBVHI_vw" type="Interaction_NameLabel"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_tfc2IzuWEee9HKMBVHI_vw" type="Interaction_SubfragmentCompartment">
+      <children xmi:type="notation:Shape" xmi:id="_0c3UMDuWEee9HKMBVHI_vw" type="Lifeline_Shape">
+        <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_2IFf4DuWEee9HKMBVHI_vw" source="CustomExtensionInfo">
+          <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_2IGuADuWEee9HKMBVHI_vw" key="manual.label.size" value="true"/>
+        </eAnnotations>
+        <children xmi:type="notation:DecorationNode" xmi:id="_0c37QDuWEee9HKMBVHI_vw" type="Lifeline_NameLabel"/>
+        <element xmi:type="uml:Lifeline" href="sequence_diagrams.uml#_0coqsDuWEee9HKMBVHI_vw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_0c3UMTuWEee9HKMBVHI_vw" x="59" y="10" width="213" height="695"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_4mXgMDuWEee9HKMBVHI_vw" type="Lifeline_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_4mYHQDuWEee9HKMBVHI_vw" type="Lifeline_NameLabel"/>
+        <element xmi:type="uml:Lifeline" href="sequence_diagrams.uml#_4mT10DuWEee9HKMBVHI_vw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_4mXgMTuWEee9HKMBVHI_vw" x="377" y="5" width="100" height="700"/>
+      </children>
+      <children xmi:type="notation:Shape" xmi:id="_6Ex-8DuWEee9HKMBVHI_vw" type="Lifeline_Shape">
+        <children xmi:type="notation:DecorationNode" xmi:id="_6EymADuWEee9HKMBVHI_vw" type="Lifeline_NameLabel"/>
+        <element xmi:type="uml:Lifeline" href="sequence_diagrams.uml#_6EttgDuWEee9HKMBVHI_vw"/>
+        <layoutConstraint xmi:type="notation:Bounds" xmi:id="_6Ex-8TuWEee9HKMBVHI_vw" x="658" y="5" width="100" height="700"/>
+      </children>
+      <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tfc2JDuWEee9HKMBVHI_vw"/>
+    </children>
+    <element xmi:type="uml:Interaction" href="sequence_diagrams.uml#_stDv4DuWEee9HKMBVHI_vw"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_tfc2JTuWEee9HKMBVHI_vw"/>
+  </children>
+  <styles xmi:type="notation:StringValueStyle" xmi:id="_tfc2JjuWEee9HKMBVHI_vw" name="diagram_compatibility_version" stringValue="1.2.0"/>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_tfc2JzuWEee9HKMBVHI_vw"/>
+  <styles xmi:type="style:PapyrusViewStyle" xmi:id="_tfc2KDuWEee9HKMBVHI_vw">
+    <owner xmi:type="uml:Model" href="sequence_diagrams.uml#_OufDUDuWEeer__XDGGfa7g"/>
+  </styles>
+  <element xmi:type="uml:Interaction" href="sequence_diagrams.uml#_stDv4DuWEee9HKMBVHI_vw"/>
+</notation:Diagram>

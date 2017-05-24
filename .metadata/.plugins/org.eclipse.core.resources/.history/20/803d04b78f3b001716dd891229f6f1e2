@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Yj4LMDuCEeer__XDGGfa7g" name="RootElement">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_YKkncDuPEeer__XDGGfa7g" name="Administrator"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ZhcTwDuPEeer__XDGGfa7g" name="StartUp">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_aNuK8DuPEeer__XDGGfa7g" name="StartUp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_adMKUDuPEeer__XDGGfa7g" name="Installation">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_adMKUTuPEeer__XDGGfa7g" name="StartUp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_cFHKYDuPEeer__XDGGfa7g" name="Modify Configuration">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_cFHKYTuPEeer__XDGGfa7g" name="StartUp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_fzlnQDuPEeer__XDGGfa7g" name="Create Default Configuration">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_fzlnQTuPEeer__XDGGfa7g" name="StartUp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_i65WcDuPEeer__XDGGfa7g" name="Shutdown">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_i65WcTuPEeer__XDGGfa7g" name="StartUp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_lNvi0DuPEeer__XDGGfa7g" client="_YKkncDuPEeer__XDGGfa7g" supplier="_ZhcTwDuPEeer__XDGGfa7g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_lmn84DuPEeer__XDGGfa7g" client="_YKkncDuPEeer__XDGGfa7g" supplier="_adMKUDuPEeer__XDGGfa7g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_l-ecMDuPEeer__XDGGfa7g" client="_YKkncDuPEeer__XDGGfa7g" supplier="_cFHKYDuPEeer__XDGGfa7g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_nNU08DuPEeer__XDGGfa7g" client="_YKkncDuPEeer__XDGGfa7g" supplier="_fzlnQDuPEeer__XDGGfa7g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_oFsAUDuPEeer__XDGGfa7g" client="_YKkncDuPEeer__XDGGfa7g" supplier="_i65WcDuPEeer__XDGGfa7g"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_qE0mgDuPEeer__XDGGfa7g" name="Actor1"/>
+</uml:Model>

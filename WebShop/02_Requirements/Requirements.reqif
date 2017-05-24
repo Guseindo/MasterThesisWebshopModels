@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<REQ-IF xmlns="http://www.omg.org/spec/ReqIF/20110401/reqif.xsd" xmlns:configuration="http://eclipse.org/rmf/pror/toolextensions/1.0">
+  <THE-HEADER>
+    <REQ-IF-HEADER IDENTIFIER="rmf-7ee0fe1b-6e32-425a-87f8-8e8a54dc75ce">
+      <COMMENT>Created by: domin</COMMENT>
+      <CREATION-TIME>2017-05-18T13:48:33.258+09:00</CREATION-TIME>
+      <REQ-IF-TOOL-ID>ProR (http://pror.org)</REQ-IF-TOOL-ID>
+      <REQ-IF-VERSION>1.0</REQ-IF-VERSION>
+      <SOURCE-TOOL-ID>ProR (http://pror.org)</SOURCE-TOOL-ID>
+    </REQ-IF-HEADER>
+  </THE-HEADER>
+  <CORE-CONTENT>
+    <REQ-IF-CONTENT>
+      <DATATYPES>
+        <DATATYPE-DEFINITION-STRING IDENTIFIER="_PwzEozuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:48:33.258+09:00" LONG-NAME="T_String32k" MAX-LENGTH="32000"/>
+      </DATATYPES>
+      <SPEC-TYPES>
+        <SPEC-OBJECT-TYPE IDENTIFIER="_PwzEpDuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:48:33.258+09:00" LONG-NAME="Requirement Type">
+          <SPEC-ATTRIBUTES>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_PwzEpTuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:48:33.258+09:00" LONG-NAME="Description">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_PwzEozuFEeer__XDGGfa7g</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+          </SPEC-ATTRIBUTES>
+        </SPEC-OBJECT-TYPE>
+        <SPECIFICATION-TYPE IDENTIFIER="_PwzEpjuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:48:33.258+09:00" LONG-NAME="Specification Type">
+          <SPEC-ATTRIBUTES>
+            <ATTRIBUTE-DEFINITION-STRING IDENTIFIER="_PwzEpzuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:48:33.258+09:00" LONG-NAME="Description">
+              <TYPE>
+                <DATATYPE-DEFINITION-STRING-REF>_PwzEozuFEeer__XDGGfa7g</DATATYPE-DEFINITION-STRING-REF>
+              </TYPE>
+            </ATTRIBUTE-DEFINITION-STRING>
+          </SPEC-ATTRIBUTES>
+        </SPECIFICATION-TYPE>
+      </SPEC-TYPES>
+      <SPEC-OBJECTS>
+        <SPEC-OBJECT DESC="" IDENTIFIER="_PwzEqDuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:48:54.213+09:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The system shall be scalable for both hardware and software parts of the system">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_X16xoDuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-23T14:19:37.099+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The system shall have an authentication mechanism.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_Z3JpkDuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:49:37.599+09:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The system shall have a role based authorization mechanism.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_h2KHgDuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:50:06.728+09:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Every transaction and action shall be logged for tracing purposes.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_mU6KwDuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-23T13:00:55.877+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The system shall provide a mechanism for logging errors and marking them by their severeness.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_tYFSkDuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:53:21.469+09:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The system shall inform the system administrator via email or SMS in case of a highly severe error.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_1UrVsDuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-23T13:01:37.186+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="All system functionalities shall be implemented in a component based manner for increased maintainability">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_Hi714DuGEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T15:00:29.971+09:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The application shall be internationalized (multilingual).">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_9CCtQD02Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:19:42.716+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="After application startup the administrator shall be presented with a login page.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_Ibw-kD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:34:15.140+09:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="If no administrator is present in the database, the administrator interface shall show a form for creating an admin account">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_QYp8oD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:35:15.128+09:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="In case the database is down the administrator shall be presented with an appropriate error message on application startup">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_YRQ3oD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:37:40.161+09:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="On Application shutdown the application state shall be stored in the database, logout the application from the database and stop the application">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_l6LkYD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-23T13:04:07.208+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="On Application shutdown, customer shall be presented with an appropriate error message that the application will shutdown">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_ruByUD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:38:18.454+09:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="The administrator shall be able to create and modify a default configuration over the server cli.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_zfeVYD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-23T13:02:52.857+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="An administrator shall be able to create new administrator accounts as well as employee accounts and also edit and delete them">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_-1CfcD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:42:40.339+09:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="An employee account shall be able to create new customer accounts as well as edit and delete them.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_SnxDED04Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:42:41.080+09:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="A customer shall be able to create his own account as well as edit and delete it.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_i-3NUD04Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:44:55.811+09:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="An admin should be able to create, edit and remove roles in the system.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_jHTiMD05Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:44:55.833+09:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Employees and customers shall be able to search products by keyword or product-code">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_s6eFYD05Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:51:59.043+09:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Employees shall be able to place, edit and cancel orders.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_u3MQwD05Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-22T23:48:25.101+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Customers shall be able to place and cancel orders.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+        <SPEC-OBJECT IDENTIFIER="_2v-psD4wEeeZbuCWOdhxUQ" LAST-CHANGE="2017-05-21T16:22:40.271+02:00">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="During account creation if a user already exists an error shall be shown in the browser with this information.">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpTuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPEC-OBJECT-TYPE-REF>_PwzEpDuFEeer__XDGGfa7g</SPEC-OBJECT-TYPE-REF>
+          </TYPE>
+        </SPEC-OBJECT>
+      </SPEC-OBJECTS>
+      <SPEC-RELATIONS>
+        <SPEC-RELATION IDENTIFIER="_xY2ZUDuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:52:12.317+09:00">
+          <TARGET>
+            <SPEC-OBJECT-REF>_mU6KwDuFEeer__XDGGfa7g</SPEC-OBJECT-REF>
+          </TARGET>
+          <SOURCE>
+            <SPEC-OBJECT-REF>_tYFSkDuFEeer__XDGGfa7g</SPEC-OBJECT-REF>
+          </SOURCE>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="_zbBscDuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:52:30.108+09:00">
+          <TARGET>
+            <SPEC-OBJECT-REF>_tYFSkDuFEeer__XDGGfa7g</SPEC-OBJECT-REF>
+          </TARGET>
+          <SOURCE>
+            <SPEC-OBJECT-REF>_mU6KwDuFEeer__XDGGfa7g</SPEC-OBJECT-REF>
+          </SOURCE>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="_Ot65ID03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:35:03.981+09:00">
+          <TARGET>
+            <SPEC-OBJECT-REF>_Ibw-kD03Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+          </TARGET>
+          <SOURCE>
+            <SPEC-OBJECT-REF>_9CCtQD02Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+          </SOURCE>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="_PS7DoD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:35:09.935+09:00">
+          <TARGET>
+            <SPEC-OBJECT-REF>_9CCtQD02Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+          </TARGET>
+          <SOURCE>
+            <SPEC-OBJECT-REF>_Ibw-kD03Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+          </SOURCE>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="_UgkNMD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:35:45.171+09:00">
+          <TARGET>
+            <SPEC-OBJECT-REF>_9CCtQD02Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+          </TARGET>
+          <SOURCE>
+            <SPEC-OBJECT-REF>_QYp8oD03Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+          </SOURCE>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="_VCpmkD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:35:47.705+09:00">
+          <TARGET>
+            <SPEC-OBJECT-REF>_QYp8oD03Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+          </TARGET>
+          <SOURCE>
+            <SPEC-OBJECT-REF>_9CCtQD02Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+          </SOURCE>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="_qevUsD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:38:12.951+09:00">
+          <TARGET>
+            <SPEC-OBJECT-REF>_l6LkYD03Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+          </TARGET>
+          <SOURCE>
+            <SPEC-OBJECT-REF>_YRQ3oD03Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+          </SOURCE>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="_q0EEcD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:38:14.968+09:00">
+          <TARGET>
+            <SPEC-OBJECT-REF>_YRQ3oD03Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+          </TARGET>
+          <SOURCE>
+            <SPEC-OBJECT-REF>_l6LkYD03Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+          </SOURCE>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="_-H-yAD4wEeeZbuCWOdhxUQ" LAST-CHANGE="2017-05-21T16:22:48.954+02:00">
+          <TARGET>
+            <SPEC-OBJECT-REF>_2v-psD4wEeeZbuCWOdhxUQ</SPEC-OBJECT-REF>
+          </TARGET>
+          <SOURCE>
+            <SPEC-OBJECT-REF>_SnxDED04Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+          </SOURCE>
+        </SPEC-RELATION>
+        <SPEC-RELATION IDENTIFIER="_-gQvID4wEeeZbuCWOdhxUQ" LAST-CHANGE="2017-05-21T16:22:51.534+02:00">
+          <TARGET>
+            <SPEC-OBJECT-REF>_SnxDED04Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+          </TARGET>
+          <SOURCE>
+            <SPEC-OBJECT-REF>_2v-psD4wEeeZbuCWOdhxUQ</SPEC-OBJECT-REF>
+          </SOURCE>
+        </SPEC-RELATION>
+      </SPEC-RELATIONS>
+      <SPECIFICATIONS>
+        <SPECIFICATION IDENTIFIER="_PwzEqjuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:48:33.258+09:00" LONG-NAME="Specification Document">
+          <VALUES>
+            <ATTRIBUTE-VALUE-STRING THE-VALUE="Requirements Document">
+              <DEFINITION>
+                <ATTRIBUTE-DEFINITION-STRING-REF>_PwzEpzuFEeer__XDGGfa7g</ATTRIBUTE-DEFINITION-STRING-REF>
+              </DEFINITION>
+            </ATTRIBUTE-VALUE-STRING>
+          </VALUES>
+          <TYPE>
+            <SPECIFICATION-TYPE-REF>_PwzEpjuFEeer__XDGGfa7g</SPECIFICATION-TYPE-REF>
+          </TYPE>
+          <CHILDREN>
+            <SPEC-HIERARCHY IDENTIFIER="_PwzErDuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:48:33.258+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_PwzEqDuFEeer__XDGGfa7g</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_X2TzMDuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:49:25.466+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_X16xoDuFEeer__XDGGfa7g</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_Z3m8kDuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:49:37.599+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_Z3JpkDuFEeer__XDGGfa7g</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_h2hT4DuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:50:06.728+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_h2KHgDuFEeer__XDGGfa7g</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_mVjrADuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:50:46.586+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_mU6KwDuFEeer__XDGGfa7g</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_tYdGADuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:51:48.223+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_tYFSkDuFEeer__XDGGfa7g</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_1VB7ADuFEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:52:36.671+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_1UrVsDuFEeer__XDGGfa7g</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_HjaXADuGEeer__XDGGfa7g" LAST-CHANGE="2017-05-18T13:54:45.261+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_Hi714DuGEeer__XDGGfa7g</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_9DMj0D02Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:33:02.190+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_9CCtQD02Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_IcORkD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:34:15.140+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_Ibw-kD03Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_QZBJAD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:35:15.128+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_QYp8oD03Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_YRruYD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:35:52.290+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_YRQ3oD03Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_l6pecD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:37:40.183+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_l6LkYD03Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_ruba8D03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:38:18.454+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_ruByUD03Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_zf1hwD03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:39:09.816+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_zfeVYD03Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_-1Zr0D03Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:39:54.889+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_-1CfcD03Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_SoI2gD04Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:42:41.080+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_SnxDED04Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_i_RdAD04Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:42:55.113+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_i-3NUD04Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_jHtK0D05Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:44:55.833+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_jHTiMD05Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_s64VED05Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:51:59.043+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_s6eFYD05Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_u3kEMD05Eeeoi7m4eFdz4w" LAST-CHANGE="2017-05-20T17:52:59.379+09:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_u3MQwD05Eeeoi7m4eFdz4w</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+            <SPEC-HIERARCHY IDENTIFIER="_2wXEMD4wEeeZbuCWOdhxUQ" LAST-CHANGE="2017-05-21T16:21:58.600+02:00">
+              <OBJECT>
+                <SPEC-OBJECT-REF>_2v-psD4wEeeZbuCWOdhxUQ</SPEC-OBJECT-REF>
+              </OBJECT>
+            </SPEC-HIERARCHY>
+          </CHILDREN>
+        </SPECIFICATION>
+      </SPECIFICATIONS>
+    </REQ-IF-CONTENT>
+  </CORE-CONTENT>
+  <TOOL-EXTENSIONS>
+    <REQ-IF-TOOL-EXTENSION>
+      <configuration:ProrToolExtension>
+        <configuration:specViewConfigurations>
+          <configuration:ProrSpecViewConfiguration specification="_PwzEqjuFEeer__XDGGfa7g">
+            <configuration:columns>
+              <configuration:Column label="Description" width="400"/>
+            </configuration:columns>
+            <configuration:leftHeaderColumn>
+              <configuration:Column label="Lead Header Column" width="30"/>
+            </configuration:leftHeaderColumn>
+          </configuration:ProrSpecViewConfiguration>
+        </configuration:specViewConfigurations>
+        <configuration:generalConfiguration>
+          <configuration:ProrGeneralConfiguration>
+            <configuration:labelConfiguration>
+              <configuration:LabelConfiguration>
+                <defaultLabel>Description</defaultLabel>
+              </configuration:LabelConfiguration>
+            </configuration:labelConfiguration>
+          </configuration:ProrGeneralConfiguration>
+        </configuration:generalConfiguration>
+      </configuration:ProrToolExtension>
+    </REQ-IF-TOOL-EXTENSION>
+  </TOOL-EXTENSIONS>
+</REQ-IF>

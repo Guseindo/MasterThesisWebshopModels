@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="ASCII"?>
+<tracemodel:EBEASTracelinkModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:tracemodel="org.eclipse.app4mc.amalthea.example.ebeas.tracemodel">
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/component_diagram.uml#_XVvkQD7cEeemba3bmDC5IA"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_MiEe8D7fEeemba3bmDC5IA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/component_diagram.uml#_gWfzED7cEeemba3bmDC5IA"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_sYQHYD8hEee5V-8lxPeD8w"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_PLf_UD7fEeemba3bmDC5IA"/>
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_X2TzMDuFEeer__XDGGfa7g"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/sequence_diagrams.uml#_HeCH4D7gEeemba3bmDC5IA"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_PLf_UD7fEeemba3bmDC5IA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/activity_diagrams.uml#_2q_fMD40EeeP5oJtaUychA"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_YwlAYD8lEeeL575FWTVoxA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_SbP40D7fEeemba3bmDC5IA"/>
+    <items href="../WebShop/01_Models/activity_diagrams.uml#_OWnNwD12EeeuvbUGFxLHGw"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_SbP40D7fEeemba3bmDC5IA"/>
+    <items href="../WebShop/01_Models/sequence_diagrams.uml#_h5K7kD8wEeeL575FWTVoxA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/uses_cases.uml#_zqz4ADxNEeeQeavaCVhKgA"/>
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_u3kEMD05Eeeoi7m4eFdz4w"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_u3kEMD05Eeeoi7m4eFdz4w"/>
+    <items href="../WebShop/01_Models/uses_cases.uml#_tH8n8DxNEeeQeavaCVhKgA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/uses_cases.uml#_5BsdITxNEeeQeavaCVhKgA"/>
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_s64VED05Eeeoi7m4eFdz4w"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_u3kEMD05Eeeoi7m4eFdz4w"/>
+    <items href="../WebShop/01_Models/uses_cases.uml#_vVqcsDxNEeeQeavaCVhKgA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/uses_cases.uml#_7EdmIDxNEeeQeavaCVhKgA"/>
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_s64VED05Eeeoi7m4eFdz4w"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_s64VED05Eeeoi7m4eFdz4w"/>
+    <items href="../WebShop/01_Models/uses_cases.uml#_5BisIDxNEeeQeavaCVhKgA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_s64VED05Eeeoi7m4eFdz4w"/>
+    <items href="../WebShop/01_Models/uses_cases.uml#_5BsdIDxNEeeQeavaCVhKgA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_s64VED05Eeeoi7m4eFdz4w"/>
+    <items href="../WebShop/01_Models/uses_cases.uml#_5BsdITxNEeeQeavaCVhKgA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_SoI2gD04Eeeoi7m4eFdz4w"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_LymjED-eEeemZ-vnUoU6dA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_LymjED-eEeemZ-vnUoU6dA"/>
+    <items href="../WebShop/01_Models/uses_cases.uml#_1w4ekDxLEeeQeavaCVhKgA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_LymjED-eEeemZ-vnUoU6dA"/>
+    <items href="../WebShop/01_Models/uses_cases.uml#_p4eioDxKEeeQeavaCVhKgA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_LymjED-eEeemZ-vnUoU6dA"/>
+    <items href="../WebShop/01_Models/uses_cases.uml#_dIzLADxKEeeQeavaCVhKgA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_LymjED-eEeemZ-vnUoU6dA"/>
+    <items href="../WebShop/01_Models/sequence_diagrams.uml#_vPF4AD8pEeeL575FWTVoxA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_LymjED-eEeemZ-vnUoU6dA"/>
+    <items href="../WebShop/01_Models/activity_diagrams.uml#_pf7yQD8oEeeL575FWTVoxA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_SoI2gD04Eeeoi7m4eFdz4w"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_Q5GwoD7fEeemba3bmDC5IA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_-1Zr0D03Eeeoi7m4eFdz4w"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_LymjED-eEeemZ-vnUoU6dA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_-1Zr0D03Eeeoi7m4eFdz4w"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_Q5GwoD7fEeemba3bmDC5IA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_zf1hwD03Eeeoi7m4eFdz4w"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_LymjED-eEeemZ-vnUoU6dA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_zf1hwD03Eeeoi7m4eFdz4w"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_Q5GwoD7fEeemba3bmDC5IA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_Q5GwoD7fEeemba3bmDC5IA"/>
+    <items href="../WebShop/01_Models/sequence_diagrams.uml#_sM0yID8vEeeL575FWTVoxA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_Q5GwoD7fEeemba3bmDC5IA"/>
+    <items href="../WebShop/01_Models/activity_diagrams.uml#_F9-KoD-hEeemZ-vnUoU6dA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_Q5GwoD7fEeemba3bmDC5IA"/>
+    <items href="../WebShop/01_Models/uses_cases.uml#_hLfu8DxLEeeQeavaCVhKgA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_Q5GwoD7fEeemba3bmDC5IA"/>
+    <items href="../WebShop/01_Models/uses_cases.uml#_tgz7QDxKEeeQeavaCVhKgA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_Q5GwoD7fEeemba3bmDC5IA"/>
+    <items href="../WebShop/01_Models/uses_cases.uml#_kPSskDxKEeeQeavaCVhKgA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_PLf_UD7fEeemba3bmDC5IA"/>
+    <items href="../WebShop/01_Models/uses_cases.uml#_YlILgDxKEeeQeavaCVhKgA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_u3kEMD05Eeeoi7m4eFdz4w"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_SbP40D7fEeemba3bmDC5IA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_SbP40D7fEeemba3bmDC5IA"/>
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_s64VED05Eeeoi7m4eFdz4w"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_YwlAYD8lEeeL575FWTVoxA"/>
+    <items href="../WebShop/01_Models/sequence_diagrams.uml#_zH9YQD8vEeeL575FWTVoxA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_YwlAYD8lEeeL575FWTVoxA"/>
+    <items href="../WebShop/01_Models/sequence_diagrams.uml#_1JUawD8pEeeL575FWTVoxA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_YwlAYD8lEeeL575FWTVoxA"/>
+    <items href="../WebShop/01_Models/sequence_diagrams.uml#_LZjiQD7gEeemba3bmDC5IA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/sequence_diagrams.uml#_lS6ekD8wEeeL575FWTVoxA"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_yXoTED8lEeeL575FWTVoxA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_a78ukD7fEeemba3bmDC5IA"/>
+    <items href="../WebShop/01_Models/sequence_diagrams.uml#_JihIID7gEeemba3bmDC5IA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/sequence_diagrams.uml#_j61RUD8wEeeL575FWTVoxA"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_bqkvID7fEeemba3bmDC5IA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/class_diagrams.uml#_dAVoMD7fEeemba3bmDC5IA"/>
+    <items href="../WebShop/01_Models/sequence_diagrams.uml#_xTg_ID8vEeeL575FWTVoxA"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/01_Models/sequence_diagrams.uml#_yCjeID8pEeeL575FWTVoxA"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#__5VYwD_OEee_I6m39E1xOQ"/>
+  </item>
+  <item xsi:type="tracemodel:RelatedTo">
+    <items href="../WebShop/02_Requirements/Requirements.reqif#_2wXEMD4wEeeZbuCWOdhxUQ"/>
+    <items href="../WebShop/01_Models/class_diagrams.uml#_LymjED-eEeemZ-vnUoU6dA"/>
+  </item>
+</tracemodel:EBEASTracelinkModel>

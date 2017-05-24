@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_OufDUDuWEeer__XDGGfa7g" name="RootElement">
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_stDv4DuWEee9HKMBVHI_vw" name="Interaction1">
+    <ownedParameter xmi:type="uml:Parameter" xmi:id="_MM924DuYEee9HKMBVHI_vw" name="DatabaseUnreachable" isException="true"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_0coqsDuWEee9HKMBVHI_vw" name="Browser[Administrator]" coveredBy="_ApC9MDuXEee9HKMBVHI_vw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_4mT10DuWEee9HKMBVHI_vw" name="Server" coveredBy="_ApDkQDuXEee9HKMBVHI_vw _DCFRIDuXEee9HKMBVHI_vw _OI-3oDuYEee9HKMBVHI_vw _OJAFwDuYEee9HKMBVHI_vw _5KrcQDuYEee9HKMBVHI_vw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_6EttgDuWEee9HKMBVHI_vw" name="Database" coveredBy="_DCHGUDuXEee9HKMBVHI_vw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ApC9MDuXEee9HKMBVHI_vw" name="MessageSend" covered="_0coqsDuWEee9HKMBVHI_vw" message="_Ao5zQDuXEee9HKMBVHI_vw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ApDkQDuXEee9HKMBVHI_vw" name="MessageRecv" covered="_4mT10DuWEee9HKMBVHI_vw" message="_Ao5zQDuXEee9HKMBVHI_vw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DCFRIDuXEee9HKMBVHI_vw" name="MessageSend0" covered="_4mT10DuWEee9HKMBVHI_vw" message="_DCA_sDuXEee9HKMBVHI_vw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DCHGUDuXEee9HKMBVHI_vw" name="MessageRecv0" covered="_6EttgDuWEee9HKMBVHI_vw" message="_DCA_sDuXEee9HKMBVHI_vw"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_OI-3oDuYEee9HKMBVHI_vw" name="AlternativeFlows" covered="_4mT10DuWEee9HKMBVHI_vw" interactionOperator="alt">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_OJAFwDuYEee9HKMBVHI_vw" name="InteractionOperand" covered="_4mT10DuWEee9HKMBVHI_vw">
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_CmnyQDuZEee9HKMBVHI_vw" name="DatabaseDown">
+          <minint xmi:type="uml:LiteralBoolean" xmi:id="_FOfzcDuZEee9HKMBVHI_vw" name="DatabaseUnreachable" value="true"/>
+        </guard>
+      </operand>
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_5KrcQDuYEee9HKMBVHI_vw" name="InteractionOperand0" covered="_4mT10DuWEee9HKMBVHI_vw">
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_5KsqYDuYEee9HKMBVHI_vw">
+          <specification xmi:type="uml:LiteralString" xmi:id="_5KsqYTuYEee9HKMBVHI_vw" value="undefined"/>
+          <maxint xmi:type="uml:LiteralInteger" xmi:id="_5KsqYzuYEee9HKMBVHI_vw" value="1"/>
+          <minint xmi:type="uml:LiteralInteger" xmi:id="_5KsqYjuYEee9HKMBVHI_vw"/>
+        </guard>
+      </operand>
+    </fragment>
+    <message xmi:type="uml:Message" xmi:id="_Ao5zQDuXEee9HKMBVHI_vw" name="Starts program" receiveEvent="_ApDkQDuXEee9HKMBVHI_vw" sendEvent="_ApC9MDuXEee9HKMBVHI_vw"/>
+    <message xmi:type="uml:Message" xmi:id="_DCA_sDuXEee9HKMBVHI_vw" name="Connects to database" receiveEvent="_DCHGUDuXEee9HKMBVHI_vw" sendEvent="_DCFRIDuXEee9HKMBVHI_vw"/>
+  </packagedElement>
+</uml:Model>

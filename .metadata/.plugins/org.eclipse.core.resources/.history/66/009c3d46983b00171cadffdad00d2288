@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_OufDUDuWEeer__XDGGfa7g" name="RootElement">
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_stDv4DuWEee9HKMBVHI_vw" name="Interaction1">
+    <ownedParameter xmi:type="uml:Parameter" xmi:id="_MM924DuYEee9HKMBVHI_vw" name="DatabaseUnreachable" isException="true"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_0coqsDuWEee9HKMBVHI_vw" name="Browser[Administrator]" represents="_MM924DuYEee9HKMBVHI_vw" coveredBy="_ApC9MDuXEee9HKMBVHI_vw">
+      <selector xmi:type="uml:LiteralBoolean" xmi:id="_D_YxcDuYEee9HKMBVHI_vw" name="DatabaseNotRunning" value="true"/>
+    </lifeline>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_4mT10DuWEee9HKMBVHI_vw" name="Server" coveredBy="_ApDkQDuXEee9HKMBVHI_vw _DCFRIDuXEee9HKMBVHI_vw"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_6EttgDuWEee9HKMBVHI_vw" name="Database" coveredBy="_DCHGUDuXEee9HKMBVHI_vw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ApC9MDuXEee9HKMBVHI_vw" name="MessageSend" covered="_0coqsDuWEee9HKMBVHI_vw" message="_Ao5zQDuXEee9HKMBVHI_vw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ApDkQDuXEee9HKMBVHI_vw" name="MessageRecv" covered="_4mT10DuWEee9HKMBVHI_vw" message="_Ao5zQDuXEee9HKMBVHI_vw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DCFRIDuXEee9HKMBVHI_vw" name="MessageSend0" covered="_4mT10DuWEee9HKMBVHI_vw" message="_DCA_sDuXEee9HKMBVHI_vw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DCHGUDuXEee9HKMBVHI_vw" name="MessageRecv0" covered="_6EttgDuWEee9HKMBVHI_vw" message="_DCA_sDuXEee9HKMBVHI_vw"/>
+    <message xmi:type="uml:Message" xmi:id="_Ao5zQDuXEee9HKMBVHI_vw" name="Starts program" receiveEvent="_ApDkQDuXEee9HKMBVHI_vw" sendEvent="_ApC9MDuXEee9HKMBVHI_vw"/>
+    <message xmi:type="uml:Message" xmi:id="_DCA_sDuXEee9HKMBVHI_vw" name="Connects to database" receiveEvent="_DCHGUDuXEee9HKMBVHI_vw" sendEvent="_DCFRIDuXEee9HKMBVHI_vw"/>
+  </packagedElement>
+</uml:Model>

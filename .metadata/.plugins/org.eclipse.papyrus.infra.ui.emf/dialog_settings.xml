@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/WebShop/01_Models/component_diagram.uml:uml:Type:type">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/WebShop/01_Models/class_diagrams.uml#_vlhGoD-7Eee7yvZjahLEqA"/>
+				<item value="platform:/resource/WebShop/01_Models/class_diagrams.uml#_2S9CsD8xEeeL575FWTVoxA"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/WebShop/01_Models/sequence_diagrams.uml:uml:Type:type">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/WebShop/01_Models/sequence_diagrams.uml:uml:PartDecomposition:decomposedAs">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/WebShop/01_Models/class_diagrams.uml:uml:Type:type">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/WebShop/01_Models/class_diagrams.uml:uml:Behavior:method">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.customizationManager">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/WebShop/01_Models/sequence_diagrams.uml:uml:ConnectableElement:represents">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/WebShop/01_Models/class_diagrams.uml#_7Ta8UD4HEeeNEt7YbsVMlA"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/WebShop/01_Models/sequence_diagrams.uml:uml:Namespace:context">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/WebShop/01_Models/sequence_diagrams.uml#_ELDWMDxZEeeQeavaCVhKgA"/>
+				<item value="platform:/resource/WebShop/01_Models/sequence_diagrams.uml#_r3EDUDxXEeeQeavaCVhKgA"/>
+				<item value="platform:/resource/WebShop/01_Models/sequence_diagrams.uml#_WzAsoDxVEeeQeavaCVhKgA"/>
+				<item value="platform:/resource/WebShop/01_Models/sequence_diagrams.uml#_d4R7oDxUEeeQeavaCVhKgA"/>
+				<item value="platform:/resource/WebShop/01_Models/sequence_diagrams.uml#_OJAFwDuYEee9HKMBVHI_vw"/>
+				<item value="platform:/resource/WebShop/01_Models/sequence_diagrams.uml#_5KrcQDuYEee9HKMBVHI_vw"/>
+			</list>
+		</section>
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__platform:/resource/WebShop/01_Models/class_diagrams.uml:uml:Constraint:bodyCondition">
+	</section>
+	<section name="org.eclipse.papyrus.infra.ui.emf.providers.EMFGraphicalContentProvider_history__uml:Namespace:context">
+		<section name="History">
+			<list key="PreviousSelection">
+				<item value="platform:/resource/WebShop/01_Models/sequence_diagrams.uml#_8zmVkDxaEeeQeavaCVhKgA"/>
+				<item value="platform:/resource/WebShop/01_Models/sequence_diagrams.uml#_ELDWMDxZEeeQeavaCVhKgA"/>
+				<item value="platform:/resource/WebShop/01_Models/sequence_diagrams.uml#_r3EDUDxXEeeQeavaCVhKgA"/>
+				<item value="platform:/resource/WebShop/01_Models/sequence_diagrams.uml#_WzAsoDxVEeeQeavaCVhKgA"/>
+				<item value="platform:/resource/WebShop/01_Models/sequence_diagrams.uml#_5KrcQDuYEee9HKMBVHI_vw"/>
+				<item value="platform:/resource/WebShop/01_Models/sequence_diagrams.uml#_OJAFwDuYEee9HKMBVHI_vw"/>
+			</list>
+		</section>
+	</section>
+</section>

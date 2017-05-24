@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_3uN70D05Eeeoi7m4eFdz4w" name="activity">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_3yL10D05Eeeoi7m4eFdz4w" name="Login Workflow" node="_5GnSID05Eeeoi7m4eFdz4w _Om6K0D06Eeeoi7m4eFdz4w _WvL5gD06Eeeoi7m4eFdz4w _fruWsD06Eeeoi7m4eFdz4w">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_RXPkcD06Eeeoi7m4eFdz4w" target="_Om6K0D06Eeeoi7m4eFdz4w" source="_5GnSID05Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ZpRsED06Eeeoi7m4eFdz4w" target="_WvL5gD06Eeeoi7m4eFdz4w" source="_Om6K0D06Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_bbjiAD06Eeeoi7m4eFdz4w" name="credentials are invalid" target="_Om6K0D06Eeeoi7m4eFdz4w" source="_WvL5gD06Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hUlx8D06Eeeoi7m4eFdz4w" name="credentials are valid" target="_fruWsD06Eeeoi7m4eFdz4w" source="_WvL5gD06Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_5GnSID05Eeeoi7m4eFdz4w" name="User starts website" outgoing="_RXPkcD06Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Om6K0D06Eeeoi7m4eFdz4w" name="User enters credentials" incoming="_RXPkcD06Eeeoi7m4eFdz4w _bbjiAD06Eeeoi7m4eFdz4w" outgoing="_ZpRsED06Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_WvL5gD06Eeeoi7m4eFdz4w" name="Credential verification" incoming="_ZpRsED06Eeeoi7m4eFdz4w" outgoing="_bbjiAD06Eeeoi7m4eFdz4w _hUlx8D06Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_fruWsD06Eeeoi7m4eFdz4w" name="User is logged in on website" incoming="_hUlx8D06Eeeoi7m4eFdz4w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_muKesD06Eeeoi7m4eFdz4w" name="Add Role Workflow" node="_t2sAkD06Eeeoi7m4eFdz4w _xQcKoD06Eeeoi7m4eFdz4w _0pcGwD06Eeeoi7m4eFdz4w _4ExlMD06Eeeoi7m4eFdz4w _AJK5cD07Eeeoi7m4eFdz4w">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_zgloUD06Eeeoi7m4eFdz4w" target="_xQcKoD06Eeeoi7m4eFdz4w" source="_t2sAkD06Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_2ZV-ID06Eeeoi7m4eFdz4w" target="_0pcGwD06Eeeoi7m4eFdz4w" source="_xQcKoD06Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_7bUDMD06Eeeoi7m4eFdz4w" target="_4ExlMD06Eeeoi7m4eFdz4w" source="_0pcGwD06Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_8GypID06Eeeoi7m4eFdz4w" name="Role already exists" target="_0pcGwD06Eeeoi7m4eFdz4w" source="_4ExlMD06Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_CdBycD07Eeeoi7m4eFdz4w" target="_AJK5cD07Eeeoi7m4eFdz4w" source="_4ExlMD06Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_t2sAkD06Eeeoi7m4eFdz4w" name="Amin starts website" outgoing="_zgloUD06Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_xQcKoD06Eeeoi7m4eFdz4w" name="Navigation to &quot;Add Role&quot; form" incoming="_zgloUD06Eeeoi7m4eFdz4w" outgoing="_2ZV-ID06Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_0pcGwD06Eeeoi7m4eFdz4w" name="Enters privileges and role name" incoming="_2ZV-ID06Eeeoi7m4eFdz4w _8GypID06Eeeoi7m4eFdz4w" outgoing="_7bUDMD06Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_4ExlMD06Eeeoi7m4eFdz4w" name="Role validation" incoming="_7bUDMD06Eeeoi7m4eFdz4w" outgoing="_8GypID06Eeeoi7m4eFdz4w _CdBycD07Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_AJK5cD07Eeeoi7m4eFdz4w" name="Role is added to database" incoming="_CdBycD07Eeeoi7m4eFdz4w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_GAR2wD07Eeeoi7m4eFdz4w" name="Edit Role" node="_HOnSID07Eeeoi7m4eFdz4w _JYskED07Eeeoi7m4eFdz4w _L7_nQD07Eeeoi7m4eFdz4w _P0I9gD07Eeeoi7m4eFdz4w">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_LpStsD07Eeeoi7m4eFdz4w" target="_JYskED07Eeeoi7m4eFdz4w" source="_HOnSID07Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_NqizwD07Eeeoi7m4eFdz4w" target="_L7_nQD07Eeeoi7m4eFdz4w" source="_JYskED07Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_R0Y-AD07Eeeoi7m4eFdz4w" target="_P0I9gD07Eeeoi7m4eFdz4w" source="_L7_nQD07Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_HOnSID07Eeeoi7m4eFdz4w" name="Adminsitrator starts website" outgoing="_LpStsD07Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_JYskED07Eeeoi7m4eFdz4w" name="Navigates to &quot;Edit Role&quot; form" incoming="_LpStsD07Eeeoi7m4eFdz4w" outgoing="_NqizwD07Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_L7_nQD07Eeeoi7m4eFdz4w" name="Selects role and changes privileges" incoming="_NqizwD07Eeeoi7m4eFdz4w" outgoing="_R0Y-AD07Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_P0I9gD07Eeeoi7m4eFdz4w" name="Role is updated in database" incoming="_R0Y-AD07Eeeoi7m4eFdz4w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_S05_0D07Eeeoi7m4eFdz4w" name="RemoveRole" node="_Uh9-kD07Eeeoi7m4eFdz4w _Vjno0D07Eeeoi7m4eFdz4w _X3P4UD07Eeeoi7m4eFdz4w _bLX7gD07Eeeoi7m4eFdz4w">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Xg2xkD07Eeeoi7m4eFdz4w" target="_Vjno0D07Eeeoi7m4eFdz4w" source="_Uh9-kD07Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Z7bWkD07Eeeoi7m4eFdz4w" target="_X3P4UD07Eeeoi7m4eFdz4w" source="_Vjno0D07Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_c0M6gD07Eeeoi7m4eFdz4w" target="_bLX7gD07Eeeoi7m4eFdz4w" source="_X3P4UD07Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_Uh9-kD07Eeeoi7m4eFdz4w" name="Administrator starts website" outgoing="_Xg2xkD07Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Vjno0D07Eeeoi7m4eFdz4w" name="Navigates to role overview" incoming="_Xg2xkD07Eeeoi7m4eFdz4w" outgoing="_Z7bWkD07Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_X3P4UD07Eeeoi7m4eFdz4w" name="Selectes role to delete and presses &quot;delete&quot; button" incoming="_Z7bWkD07Eeeoi7m4eFdz4w" outgoing="_c0M6gD07Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_bLX7gD07Eeeoi7m4eFdz4w" name="Role is deleted from database" incoming="_c0M6gD07Eeeoi7m4eFdz4w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_kp9V0D07Eeeoi7m4eFdz4w" name="PlaceOrder" node="_mHNW8D07Eeeoi7m4eFdz4w _nRCs0D07Eeeoi7m4eFdz4w _sUzhoD07Eeeoi7m4eFdz4w _wmcV8D07Eeeoi7m4eFdz4w _4erdgD07Eeeoi7m4eFdz4w _A1wdMD08Eeeoi7m4eFdz4w _CiTekD08Eeeoi7m4eFdz4w _LV0ioD08Eeeoi7m4eFdz4w">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_t4Y0QD07Eeeoi7m4eFdz4w" target="_sUzhoD07Eeeoi7m4eFdz4w" source="_nRCs0D07Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_uRge4D07Eeeoi7m4eFdz4w" target="_nRCs0D07Eeeoi7m4eFdz4w" source="_mHNW8D07Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_zsrHED07Eeeoi7m4eFdz4w" target="_wmcV8D07Eeeoi7m4eFdz4w" source="_sUzhoD07Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_0MlWMD07Eeeoi7m4eFdz4w" name="User decides to continue shopping" target="_nRCs0D07Eeeoi7m4eFdz4w" source="_wmcV8D07Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5rjgUD07Eeeoi7m4eFdz4w" name="User decides to proceed to checkout" target="_4erdgD07Eeeoi7m4eFdz4w" source="_wmcV8D07Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_EVCngD08Eeeoi7m4eFdz4w" name="User decides to cancel checkout" target="_CiTekD08Eeeoi7m4eFdz4w" source="_A1wdMD08Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_KaPrMD08Eeeoi7m4eFdz4w" target="_A1wdMD08Eeeoi7m4eFdz4w" source="_4erdgD07Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_R8jmED08Eeeoi7m4eFdz4w" target="_LV0ioD08Eeeoi7m4eFdz4w" source="_A1wdMD08Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_SjUrID08Eeeoi7m4eFdz4w" target="_CiTekD08Eeeoi7m4eFdz4w" source="_LV0ioD08Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_mHNW8D07Eeeoi7m4eFdz4w" name="User starts website" outgoing="_uRge4D07Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_nRCs0D07Eeeoi7m4eFdz4w" name="Browses product pages" incoming="_uRge4D07Eeeoi7m4eFdz4w _0MlWMD07Eeeoi7m4eFdz4w" outgoing="_t4Y0QD07Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_sUzhoD07Eeeoi7m4eFdz4w" name="Adds product to shopping cart" incoming="_t4Y0QD07Eeeoi7m4eFdz4w" outgoing="_zsrHED07Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_wmcV8D07Eeeoi7m4eFdz4w" name="Continue shopping" incoming="_zsrHED07Eeeoi7m4eFdz4w" outgoing="_0MlWMD07Eeeoi7m4eFdz4w _5rjgUD07Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_4erdgD07Eeeoi7m4eFdz4w" name="User fills in checkout form" incoming="_5rjgUD07Eeeoi7m4eFdz4w" outgoing="_KaPrMD08Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_A1wdMD08Eeeoi7m4eFdz4w" name="Cancel decision" incoming="_KaPrMD08Eeeoi7m4eFdz4w" outgoing="_EVCngD08Eeeoi7m4eFdz4w _R8jmED08Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_CiTekD08Eeeoi7m4eFdz4w" name="User lands on home page of website" incoming="_EVCngD08Eeeoi7m4eFdz4w _SjUrID08Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_LV0ioD08Eeeoi7m4eFdz4w" name="User presses finishes checkout process and buys products" incoming="_R8jmED08Eeeoi7m4eFdz4w" outgoing="_SjUrID08Eeeoi7m4eFdz4w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_ZS7WsD08Eeeoi7m4eFdz4w" name="EditOrder" node="_aXX2QD08Eeeoi7m4eFdz4w _bmHhUD08Eeeoi7m4eFdz4w _hwAQsD08Eeeoi7m4eFdz4w _kkUycD08Eeeoi7m4eFdz4w _pS72oD08Eeeoi7m4eFdz4w _tOSR4D08Eeeoi7m4eFdz4w _yIs9cD08Eeeoi7m4eFdz4w _FloQMD09Eeeoi7m4eFdz4w _kJOVYD09Eeeoi7m4eFdz4w _MP9kwD0-Eeeoi7m4eFdz4w _ZVWtsD0-Eeeoi7m4eFdz4w">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_hMQqcD08Eeeoi7m4eFdz4w" target="_bmHhUD08Eeeoi7m4eFdz4w" source="_aXX2QD08Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_jTtfID08Eeeoi7m4eFdz4w" target="_hwAQsD08Eeeoi7m4eFdz4w" source="_bmHhUD08Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vPZ1ED08Eeeoi7m4eFdz4w" target="_tOSR4D08Eeeoi7m4eFdz4w" source="_kkUycD08Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vq6sYD08Eeeoi7m4eFdz4w" target="_pS72oD08Eeeoi7m4eFdz4w" source="_tOSR4D08Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_wMkA4D08Eeeoi7m4eFdz4w" target="_kkUycD08Eeeoi7m4eFdz4w" source="_hwAQsD08Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_2fqWoD08Eeeoi7m4eFdz4w" target="_yIs9cD08Eeeoi7m4eFdz4w" source="_kkUycD08Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_KH324D0-Eeeoi7m4eFdz4w" name="New order value is higher than old one" target="_FloQMD09Eeeoi7m4eFdz4w" source="_kJOVYD09Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Klr0QD0-Eeeoi7m4eFdz4w" target="_kJOVYD09Eeeoi7m4eFdz4w" source="_yIs9cD08Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_SFi4ED0-Eeeoi7m4eFdz4w" name="New order value is lower than old one" target="_MP9kwD0-Eeeoi7m4eFdz4w" source="_kJOVYD09Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_b9X40D0-Eeeoi7m4eFdz4w" target="_ZVWtsD0-Eeeoi7m4eFdz4w" source="_FloQMD09Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_c0a1kD0-Eeeoi7m4eFdz4w" target="_ZVWtsD0-Eeeoi7m4eFdz4w" source="_MP9kwD0-Eeeoi7m4eFdz4w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_dTc68D0-Eeeoi7m4eFdz4w" target="_pS72oD08Eeeoi7m4eFdz4w" source="_ZVWtsD0-Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_aXX2QD08Eeeoi7m4eFdz4w" name="User starts website" outgoing="_hMQqcD08Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_bmHhUD08Eeeoi7m4eFdz4w" name="User navigates to &quot;My orders&quot; page" incoming="_hMQqcD08Eeeoi7m4eFdz4w" outgoing="_jTtfID08Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_hwAQsD08Eeeoi7m4eFdz4w" name="User selects an order and starts editing" incoming="_jTtfID08Eeeoi7m4eFdz4w" outgoing="_wMkA4D08Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_kkUycD08Eeeoi7m4eFdz4w" name="Order is already shipped" incoming="_wMkA4D08Eeeoi7m4eFdz4w" outgoing="_vPZ1ED08Eeeoi7m4eFdz4w _2fqWoD08Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_pS72oD08Eeeoi7m4eFdz4w" name="Editing is finished" incoming="_vq6sYD08Eeeoi7m4eFdz4w _dTc68D0-Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_tOSR4D08Eeeoi7m4eFdz4w" name="User is presented with an error" incoming="_vPZ1ED08Eeeoi7m4eFdz4w" outgoing="_vq6sYD08Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_yIs9cD08Eeeoi7m4eFdz4w" name="User saves the changes and proceeds to checkout" incoming="_2fqWoD08Eeeoi7m4eFdz4w" outgoing="_Klr0QD0-Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_FloQMD09Eeeoi7m4eFdz4w" name="User is presented with payment form" incoming="_KH324D0-Eeeoi7m4eFdz4w" outgoing="_b9X40D0-Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:ForkNode" xmi:id="_kJOVYD09Eeeoi7m4eFdz4w" name="New value of order is calculated" incoming="_Klr0QD0-Eeeoi7m4eFdz4w" outgoing="_KH324D0-Eeeoi7m4eFdz4w _SFi4ED0-Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_MP9kwD0-Eeeoi7m4eFdz4w" name="User is presented with cashback form" incoming="_SFi4ED0-Eeeoi7m4eFdz4w" outgoing="_c0a1kD0-Eeeoi7m4eFdz4w"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_ZVWtsD0-Eeeoi7m4eFdz4w" name="User sends form" incoming="_b9X40D0-Eeeoi7m4eFdz4w _c0a1kD0-Eeeoi7m4eFdz4w" outgoing="_dTc68D0-Eeeoi7m4eFdz4w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_B3L4oD12EeeuvbUGFxLHGw" name="RemoveOrder" node="_GzurID12EeeuvbUGFxLHGw _IlLaoD12EeeuvbUGFxLHGw _MBRHAD12EeeuvbUGFxLHGw _OWnNwD12EeeuvbUGFxLHGw _JzX2oD13EeeuvbUGFxLHGw _aJODsD13EeeuvbUGFxLHGw">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_K6qEQD12EeeuvbUGFxLHGw" target="_IlLaoD12EeeuvbUGFxLHGw" source="_GzurID12EeeuvbUGFxLHGw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_NUQY4D12EeeuvbUGFxLHGw" target="_MBRHAD12EeeuvbUGFxLHGw" source="_IlLaoD12EeeuvbUGFxLHGw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_QHv0MD12EeeuvbUGFxLHGw" name="Order is already in transport" target="_IlLaoD12EeeuvbUGFxLHGw" source="_OWnNwD12EeeuvbUGFxLHGw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_WbiGcD12EeeuvbUGFxLHGw" target="_OWnNwD12EeeuvbUGFxLHGw" source="_MBRHAD12EeeuvbUGFxLHGw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_O8tH8D13EeeuvbUGFxLHGw" name="Order is old and has already been shipped to customer" target="_aJODsD13EeeuvbUGFxLHGw" source="_OWnNwD12EeeuvbUGFxLHGw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_fP63wD13EeeuvbUGFxLHGw" target="_JzX2oD13EeeuvbUGFxLHGw" source="_aJODsD13EeeuvbUGFxLHGw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_fxG5QD13EeeuvbUGFxLHGw" name="Order is not processed yet" target="_aJODsD13EeeuvbUGFxLHGw" source="_OWnNwD12EeeuvbUGFxLHGw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_GzurID12EeeuvbUGFxLHGw" name="User starts website" outgoing="_K6qEQD12EeeuvbUGFxLHGw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_IlLaoD12EeeuvbUGFxLHGw" name="Navigates to order overview" incoming="_K6qEQD12EeeuvbUGFxLHGw _QHv0MD12EeeuvbUGFxLHGw" outgoing="_NUQY4D12EeeuvbUGFxLHGw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_MBRHAD12EeeuvbUGFxLHGw" name="Selects order to delete" incoming="_NUQY4D12EeeuvbUGFxLHGw" outgoing="_WbiGcD12EeeuvbUGFxLHGw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_OWnNwD12EeeuvbUGFxLHGw" name="Delete Evaluation" incoming="_WbiGcD12EeeuvbUGFxLHGw" outgoing="_QHv0MD12EeeuvbUGFxLHGw _O8tH8D13EeeuvbUGFxLHGw _fxG5QD13EeeuvbUGFxLHGw"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_JzX2oD13EeeuvbUGFxLHGw" name="Order deletion complete" incoming="_fP63wD13EeeuvbUGFxLHGw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_aJODsD13EeeuvbUGFxLHGw" name="Confirms order deletion" incoming="_O8tH8D13EeeuvbUGFxLHGw _fxG5QD13EeeuvbUGFxLHGw" outgoing="_fP63wD13EeeuvbUGFxLHGw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_ioTpQD4OEeecgdPFS09KtA" name="General Struts Flow" node="_luFHYD4OEeecgdPFS09KtA _nz_rAD4OEeecgdPFS09KtA _xhRooD4OEeecgdPFS09KtA _4E1cQD4OEeecgdPFS09KtA __9HnID4OEeecgdPFS09KtA _EZg58D4PEeecgdPFS09KtA _Fzj2ED4PEeecgdPFS09KtA _ICE8ED4PEeecgdPFS09KtA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_p5sMMD4OEeecgdPFS09KtA" target="_nz_rAD4OEeecgdPFS09KtA" source="_luFHYD4OEeecgdPFS09KtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_85MjID4OEeecgdPFS09KtA" target="_4E1cQD4OEeecgdPFS09KtA" source="_nz_rAD4OEeecgdPFS09KtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_9Oqc0D4OEeecgdPFS09KtA" target="_xhRooD4OEeecgdPFS09KtA" source="_4E1cQD4OEeecgdPFS09KtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JYIJAD4PEeecgdPFS09KtA" target="__9HnID4OEeecgdPFS09KtA" source="_xhRooD4OEeecgdPFS09KtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JujsAD4PEeecgdPFS09KtA" name="Unauthorized access" target="_Fzj2ED4PEeecgdPFS09KtA" source="__9HnID4OEeecgdPFS09KtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_NKgOcD4PEeecgdPFS09KtA" name="authorized access" target="_ICE8ED4PEeecgdPFS09KtA" source="__9HnID4OEeecgdPFS09KtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_QQThwD4PEeecgdPFS09KtA" target="_EZg58D4PEeecgdPFS09KtA" source="_ICE8ED4PEeecgdPFS09KtA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Qo8EMD4PEeecgdPFS09KtA" target="_EZg58D4PEeecgdPFS09KtA" source="_Fzj2ED4PEeecgdPFS09KtA"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_luFHYD4OEeecgdPFS09KtA" name="User requests resource" outgoing="_p5sMMD4OEeecgdPFS09KtA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_nz_rAD4OEeecgdPFS09KtA" name="ActionServlet" incoming="_p5sMMD4OEeecgdPFS09KtA" outgoing="_85MjID4OEeecgdPFS09KtA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_xhRooD4OEeecgdPFS09KtA" name="Servlet reads struts configuration" incoming="_9Oqc0D4OEeecgdPFS09KtA" outgoing="_JYIJAD4PEeecgdPFS09KtA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_4E1cQD4OEeecgdPFS09KtA" name="RequestProcessor" incoming="_85MjID4OEeecgdPFS09KtA" outgoing="_9Oqc0D4OEeecgdPFS09KtA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="__9HnID4OEeecgdPFS09KtA" name="Authorization validation" incoming="_JYIJAD4PEeecgdPFS09KtA" outgoing="_JujsAD4PEeecgdPFS09KtA _NKgOcD4PEeecgdPFS09KtA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_EZg58D4PEeecgdPFS09KtA" name="Request is finished" incoming="_QQThwD4PEeecgdPFS09KtA _Qo8EMD4PEeecgdPFS09KtA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Fzj2ED4PEeecgdPFS09KtA" name="User gets error message" incoming="_JujsAD4PEeecgdPFS09KtA" outgoing="_Qo8EMD4PEeecgdPFS09KtA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ICE8ED4PEeecgdPFS09KtA" name="View is presented to user" incoming="_NKgOcD4PEeecgdPFS09KtA" outgoing="_QQThwD4PEeecgdPFS09KtA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_rL9QED40EeeP5oJtaUychA" name="Login" node="_s3b6cD40EeeP5oJtaUychA _ulpvwD40EeeP5oJtaUychA _ygQkID40EeeP5oJtaUychA _2q_fMD40EeeP5oJtaUychA _6PLXoD40EeeP5oJtaUychA _9NGhUD40EeeP5oJtaUychA _CzwAwD41EeeP5oJtaUychA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_yJcmoD40EeeP5oJtaUychA" target="_ulpvwD40EeeP5oJtaUychA" source="_s3b6cD40EeeP5oJtaUychA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_zvEgoD40EeeP5oJtaUychA" target="_ygQkID40EeeP5oJtaUychA" source="_ulpvwD40EeeP5oJtaUychA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_4xtUED40EeeP5oJtaUychA" target="_2q_fMD40EeeP5oJtaUychA" source="_ygQkID40EeeP5oJtaUychA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_76K50D40EeeP5oJtaUychA" target="_ygQkID40EeeP5oJtaUychA" source="_6PLXoD40EeeP5oJtaUychA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_8WQ_8D40EeeP5oJtaUychA" name="Credentials are invalid" target="_6PLXoD40EeeP5oJtaUychA" source="_2q_fMD40EeeP5oJtaUychA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Ac-WoD41EeeP5oJtaUychA" name="Credentials are valid" target="_9NGhUD40EeeP5oJtaUychA" source="_2q_fMD40EeeP5oJtaUychA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_EA6XcD41EeeP5oJtaUychA" target="_CzwAwD41EeeP5oJtaUychA" source="_9NGhUD40EeeP5oJtaUychA"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_s3b6cD40EeeP5oJtaUychA" name="User starts website" outgoing="_yJcmoD40EeeP5oJtaUychA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ulpvwD40EeeP5oJtaUychA" name="Opens login form" incoming="_yJcmoD40EeeP5oJtaUychA" outgoing="_zvEgoD40EeeP5oJtaUychA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ygQkID40EeeP5oJtaUychA" name="Fills in login credentials and sends form" incoming="_zvEgoD40EeeP5oJtaUychA _76K50D40EeeP5oJtaUychA" outgoing="_4xtUED40EeeP5oJtaUychA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_2q_fMD40EeeP5oJtaUychA" name="Credential validation" incoming="_4xtUED40EeeP5oJtaUychA" outgoing="_8WQ_8D40EeeP5oJtaUychA _Ac-WoD41EeeP5oJtaUychA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_6PLXoD40EeeP5oJtaUychA" name="Login Error is shown" incoming="_8WQ_8D40EeeP5oJtaUychA" outgoing="_76K50D40EeeP5oJtaUychA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_9NGhUD40EeeP5oJtaUychA" name="Login success is shown" incoming="_Ac-WoD41EeeP5oJtaUychA" outgoing="_EA6XcD41EeeP5oJtaUychA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_CzwAwD41EeeP5oJtaUychA" name="Login finished" incoming="_EA6XcD41EeeP5oJtaUychA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_Eo3aYD5YEeeqyYimYjXHFA" name="CreateUser" node="_HeuNMD5YEeeqyYimYjXHFA _LKxBID5YEeeqyYimYjXHFA _MZBkAD5YEeeqyYimYjXHFA _NxPUID5YEeeqyYimYjXHFA _Q4kRcD5YEeeqyYimYjXHFA _S3D-cD5YEeeqyYimYjXHFA _UKYngD5YEeeqyYimYjXHFA">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_VGAiQD5YEeeqyYimYjXHFA" target="_MZBkAD5YEeeqyYimYjXHFA" source="_HeuNMD5YEeeqyYimYjXHFA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_VVdTgD5YEeeqyYimYjXHFA" target="_NxPUID5YEeeqyYimYjXHFA" source="_MZBkAD5YEeeqyYimYjXHFA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_VwN84D5YEeeqyYimYjXHFA" target="_Q4kRcD5YEeeqyYimYjXHFA" source="_NxPUID5YEeeqyYimYjXHFA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_WNKXkD5YEeeqyYimYjXHFA" name="user already exists" target="_S3D-cD5YEeeqyYimYjXHFA" source="_Q4kRcD5YEeeqyYimYjXHFA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_abPhkD5YEeeqyYimYjXHFA" name="valid data entered" target="_UKYngD5YEeeqyYimYjXHFA" source="_Q4kRcD5YEeeqyYimYjXHFA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_cPjX0D5YEeeqyYimYjXHFA" target="_NxPUID5YEeeqyYimYjXHFA" source="_S3D-cD5YEeeqyYimYjXHFA"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_cq9hcD5YEeeqyYimYjXHFA" target="_LKxBID5YEeeqyYimYjXHFA" source="_UKYngD5YEeeqyYimYjXHFA"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_HeuNMD5YEeeqyYimYjXHFA" name="User starts website" outgoing="_VGAiQD5YEeeqyYimYjXHFA"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_LKxBID5YEeeqyYimYjXHFA" name="User creation finished" incoming="_cq9hcD5YEeeqyYimYjXHFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_MZBkAD5YEeeqyYimYjXHFA" name="User navigates to register form" incoming="_VGAiQD5YEeeqyYimYjXHFA" outgoing="_VVdTgD5YEeeqyYimYjXHFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_NxPUID5YEeeqyYimYjXHFA" name="User sends data for account creation" incoming="_VVdTgD5YEeeqyYimYjXHFA _cPjX0D5YEeeqyYimYjXHFA" outgoing="_VwN84D5YEeeqyYimYjXHFA"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_Q4kRcD5YEeeqyYimYjXHFA" name="Data validation" incoming="_VwN84D5YEeeqyYimYjXHFA" outgoing="_WNKXkD5YEeeqyYimYjXHFA _abPhkD5YEeeqyYimYjXHFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_S3D-cD5YEeeqyYimYjXHFA" name="Show error with this info to user" incoming="_WNKXkD5YEeeqyYimYjXHFA" outgoing="_cPjX0D5YEeeqyYimYjXHFA"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_UKYngD5YEeeqyYimYjXHFA" name="User was created" incoming="_abPhkD5YEeeqyYimYjXHFA" outgoing="_cq9hcD5YEeeqyYimYjXHFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_f2wvED5YEeeqyYimYjXHFA" name="EditUser" node="_g6bykD5YEeeqyYimYjXHFA _igApQD5YEeeqyYimYjXHFA _joVjQD5YEeeqyYimYjXHFA">
+    <node xmi:type="uml:InitialNode" xmi:id="_g6bykD5YEeeqyYimYjXHFA" name="User starts website"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_igApQD5YEeeqyYimYjXHFA" name="User editing complete"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_joVjQD5YEeeqyYimYjXHFA" name="data validation"/>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_lkyIAD47Eeej1opwTAs2Wg" name="RootElement">
+  <packagedElement xmi:type="uml:Component" xmi:id="_wTJvMD47Eeej1opwTAs2Wg" name="Web Browser">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_1MJMgD49Eeej1opwTAs2Wg" client="_wTJvMD47Eeej1opwTAs2Wg" supplier="_z6UYQD49Eeej1opwTAs2Wg"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_1vwP4D49Eeej1opwTAs2Wg" client="_wTJvMD47Eeej1opwTAs2Wg" supplier="_yuk94D49Eeej1opwTAs2Wg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_yuk94D49Eeej1opwTAs2Wg" name="Request"/>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_z6UYQD49Eeej1opwTAs2Wg" name="Response"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_2xsOAD49Eeej1opwTAs2Wg" name="Application">
+    <packagedElement xmi:type="uml:Component" xmi:id="_60TH0D49Eeej1opwTAs2Wg" name="Controller">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_c7LtkD4-Eeej1opwTAs2Wg" client="_60TH0D49Eeej1opwTAs2Wg" supplier="_9dszAD49Eeej1opwTAs2Wg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_kkN7gD4-Eeej1opwTAs2Wg" client="_60TH0D49Eeej1opwTAs2Wg" supplier="_ieSw0D4-Eeej1opwTAs2Wg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_9dszAD49Eeej1opwTAs2Wg" name="View (JSP)">
+      <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="__DtukD49Eeej1opwTAs2Wg" client="_9dszAD49Eeej1opwTAs2Wg" supplier="_z6UYQD49Eeej1opwTAs2Wg" contract="_z6UYQD49Eeej1opwTAs2Wg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_dkWmYD4-Eeej1opwTAs2Wg" client="_9dszAD49Eeej1opwTAs2Wg" supplier="_60TH0D49Eeej1opwTAs2Wg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_hUB9ID4-Eeej1opwTAs2Wg" client="_9dszAD49Eeej1opwTAs2Wg" supplier="_e67-0D4-Eeej1opwTAs2Wg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_e67-0D4-Eeej1opwTAs2Wg" name="Struts Tag Libraries">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_g0bQAD4-Eeej1opwTAs2Wg" client="_e67-0D4-Eeej1opwTAs2Wg" supplier="_9dszAD49Eeej1opwTAs2Wg"/>
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_op27MD4-Eeej1opwTAs2Wg" client="_e67-0D4-Eeej1opwTAs2Wg" supplier="_lmU4wD4-Eeej1opwTAs2Wg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_ieSw0D4-Eeej1opwTAs2Wg" name="Model">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_j2zb4D4-Eeej1opwTAs2Wg" client="_ieSw0D4-Eeej1opwTAs2Wg" supplier="_60TH0D49Eeej1opwTAs2Wg"/>
+      <packagedElement xmi:type="uml:Usage" xmi:id="_4KhzwD4-Eeej1opwTAs2Wg" client="_ieSw0D4-Eeej1opwTAs2Wg" supplier="_y8MtsD4-Eeej1opwTAs2Wg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Component" xmi:id="_lmU4wD4-Eeej1opwTAs2Wg" name="Resource Property Files">
+      <packagedElement xmi:type="uml:Dependency" xmi:id="_nusTcD4-Eeej1opwTAs2Wg" client="_lmU4wD4-Eeej1opwTAs2Wg" supplier="_e67-0D4-Eeej1opwTAs2Wg"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_pRN2ID4-Eeej1opwTAs2Wg" name="Database">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_3SL2gD4-Eeej1opwTAs2Wg" client="_pRN2ID4-Eeej1opwTAs2Wg" supplier="_y8MtsD4-Eeej1opwTAs2Wg" contract="_y8MtsD4-Eeej1opwTAs2Wg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_y8MtsD4-Eeej1opwTAs2Wg" name="DatabaseInterface"/>
+  <packagedElement xmi:type="uml:Component" xmi:id="_5tyEgD5lEeeCMomHTbiy5g" name="WSController Classes">
+    <packagedElement xmi:type="uml:Component" xmi:id="_8zl-4D5lEeeCMomHTbiy5g" name="WSAction class 1"/>
+  </packagedElement>
+</uml:Model>

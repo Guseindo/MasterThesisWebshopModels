@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_OufDUDuWEeer__XDGGfa7g" name="RootElement">
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_stDv4DuWEee9HKMBVHI_vw" name="Application Startup">
+    <ownedParameter xmi:type="uml:Parameter" xmi:id="_MM924DuYEee9HKMBVHI_vw" name="DatabaseUnreachable" isException="true"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_0coqsDuWEee9HKMBVHI_vw" name="Browser[Administrator]" coveredBy="_ApC9MDuXEee9HKMBVHI_vw _OI-3oDuYEee9HKMBVHI_vw _5KrcQDuYEee9HKMBVHI_vw _OJAFwDuYEee9HKMBVHI_vw _aKUGEDuZEee9HKMBVHI_vw __R6Y4DubEee9FeQnwV78Kg _0qRPUDucEee9FeQnwV78Kg _7LVvoDucEee9FeQnwV78Kg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_4mT10DuWEee9HKMBVHI_vw" name="Server" coveredBy="_ApDkQDuXEee9HKMBVHI_vw _DCFRIDuXEee9HKMBVHI_vw _OI-3oDuYEee9HKMBVHI_vw _OJAFwDuYEee9HKMBVHI_vw _5KrcQDuYEee9HKMBVHI_vw _VWTkgDuZEee9HKMBVHI_vw _aKSQ4DuZEee9HKMBVHI_vw __R6Y4DubEee9FeQnwV78Kg _xmxCEDucEee9FeQnwV78Kg _0qPaIDucEee9FeQnwV78Kg _5KZLkDucEee9FeQnwV78Kg _7LUhgDucEee9FeQnwV78Kg"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_6EttgDuWEee9HKMBVHI_vw" name="Database" coveredBy="_DCHGUDuXEee9HKMBVHI_vw _OI-3oDuYEee9HKMBVHI_vw _5KrcQDuYEee9HKMBVHI_vw _OJAFwDuYEee9HKMBVHI_vw _VWS9cDuZEee9HKMBVHI_vw __R6Y4DubEee9FeQnwV78Kg _xmqUYDucEee9FeQnwV78Kg _5KVhMDucEee9FeQnwV78Kg"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ApC9MDuXEee9HKMBVHI_vw" name="MessageSend" covered="_0coqsDuWEee9HKMBVHI_vw" message="_Ao5zQDuXEee9HKMBVHI_vw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ApDkQDuXEee9HKMBVHI_vw" name="MessageRecv" covered="_4mT10DuWEee9HKMBVHI_vw" message="_Ao5zQDuXEee9HKMBVHI_vw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DCFRIDuXEee9HKMBVHI_vw" name="MessageSend0" covered="_4mT10DuWEee9HKMBVHI_vw" message="_DCA_sDuXEee9HKMBVHI_vw"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_DCHGUDuXEee9HKMBVHI_vw" name="MessageRecv0" covered="_6EttgDuWEee9HKMBVHI_vw" message="_DCA_sDuXEee9HKMBVHI_vw"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_OI-3oDuYEee9HKMBVHI_vw" name="AlternativeFlows" covered="_4mT10DuWEee9HKMBVHI_vw _6EttgDuWEee9HKMBVHI_vw _0coqsDuWEee9HKMBVHI_vw" interactionOperator="alt">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_OJAFwDuYEee9HKMBVHI_vw" name="DatabaseDown" covered="_4mT10DuWEee9HKMBVHI_vw _6EttgDuWEee9HKMBVHI_vw _0coqsDuWEee9HKMBVHI_vw">
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_pqWFcDuZEee9HKMBVHI_vw" name="DatabaseDown">
+          <minint xmi:type="uml:LiteralBoolean" xmi:id="_pqWFcTuZEee9HKMBVHI_vw" name="DatabaseUnReachable" value="true"/>
+        </ownedRule>
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_PzYAEDucEee9FeQnwV78Kg" name="AdminFound">
+          <specification xmi:type="uml:Expression" xmi:id="_qcArkDucEee9FeQnwV78Kg" name="AdminFound">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_qcArkTucEee9FeQnwV78Kg" name="DatabaseDown"/>
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_qcArkjucEee9FeQnwV78Kg" name="AdminFound" value="true"/>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_4pLxYDubEee9FeQnwV78Kg" name="NoAdminFound">
+          <specification xmi:type="uml:Expression" xmi:id="_kwUUEDucEee9FeQnwV78Kg" name="AdminNotFound">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_uT3G4DucEee9FeQnwV78Kg" name="DatabaseDown"/>
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_kwUUEjucEee9FeQnwV78Kg" name="AdminFound"/>
+          </specification>
+        </ownedRule>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VWS9cDuZEee9HKMBVHI_vw" name="MessageSend" covered="_6EttgDuWEee9HKMBVHI_vw" message="_VWRIQDuZEee9HKMBVHI_vw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VWTkgDuZEee9HKMBVHI_vw" name="MessageRecv" covered="_4mT10DuWEee9HKMBVHI_vw" message="_VWRIQDuZEee9HKMBVHI_vw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aKSQ4DuZEee9HKMBVHI_vw" name="MessageSend0" covered="_4mT10DuWEee9HKMBVHI_vw" message="_aKPNkDuZEee9HKMBVHI_vw"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aKUGEDuZEee9HKMBVHI_vw" name="MessageRecv0" covered="_0coqsDuWEee9HKMBVHI_vw" message="_aKPNkDuZEee9HKMBVHI_vw"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_1LvFADuZEee9HKMBVHI_vw" name="DatabaseDown">
+          <specification xmi:type="uml:Expression" xmi:id="_f4SOIDucEee9FeQnwV78Kg" name="DatabaseDown" symbol="">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_f4SOITucEee9FeQnwV78Kg" name="DatabaseDown" value="true"/>
+          </specification>
+        </guard>
+      </operand>
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_5KrcQDuYEee9HKMBVHI_vw" name="AdminNotFound" covered="_4mT10DuWEee9HKMBVHI_vw _6EttgDuWEee9HKMBVHI_vw _0coqsDuWEee9HKMBVHI_vw">
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_5KsqYDuYEee9HKMBVHI_vw" name="Administrator not found in database">
+          <specification xmi:type="uml:LiteralString" xmi:id="_5KsqYTuYEee9HKMBVHI_vw" value="undefined"/>
+          <minint xmi:type="uml:LiteralBoolean" xmi:id="_jd5xUDuZEee9HKMBVHI_vw" name="AdminNotFound" value="true"/>
+        </ownedRule>
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="__R81IDubEee9FeQnwV78Kg" name="AdminFound">
+          <specification xmi:type="uml:LiteralBoolean" xmi:id="_GPLtADucEee9FeQnwV78Kg" name="AdminFound" value="true"/>
+          <minint xmi:type="uml:LiteralBoolean" xmi:id="_EzBRADucEee9FeQnwV78Kg" name="AdminFound" value="true"/>
+        </ownedRule>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xmqUYDucEee9FeQnwV78Kg" name="MessageSend" covered="_6EttgDuWEee9HKMBVHI_vw" message="_xmhKcDucEee9FeQnwV78Kg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_xmxCEDucEee9FeQnwV78Kg" name="MessageRecv" covered="_4mT10DuWEee9HKMBVHI_vw" message="_xmhKcDucEee9FeQnwV78Kg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0qPaIDucEee9FeQnwV78Kg" name="MessageSend0" covered="_4mT10DuWEee9HKMBVHI_vw" message="_0qNk8DucEee9FeQnwV78Kg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0qRPUDucEee9FeQnwV78Kg" name="MessageRecv0" covered="_0coqsDuWEee9HKMBVHI_vw" message="_0qNk8DucEee9FeQnwV78Kg"/>
+      </operand>
+      <operand xmi:type="uml:InteractionOperand" xmi:id="__R6Y4DubEee9FeQnwV78Kg" name="AdminFound" covered="_4mT10DuWEee9HKMBVHI_vw _6EttgDuWEee9HKMBVHI_vw _0coqsDuWEee9HKMBVHI_vw">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5KVhMDucEee9FeQnwV78Kg" name="MessageSend" covered="_6EttgDuWEee9HKMBVHI_vw" message="_5KTE8DucEee9FeQnwV78Kg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_5KZLkDucEee9FeQnwV78Kg" name="MessageRecv" covered="_4mT10DuWEee9HKMBVHI_vw" message="_5KTE8DucEee9FeQnwV78Kg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7LUhgDucEee9FeQnwV78Kg" name="MessageSend0" covered="_4mT10DuWEee9HKMBVHI_vw" message="_7LSsUDucEee9FeQnwV78Kg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_7LVvoDucEee9FeQnwV78Kg" name="MessageRecv0" covered="_0coqsDuWEee9HKMBVHI_vw" message="_7LSsUDucEee9FeQnwV78Kg"/>
+      </operand>
+    </fragment>
+    <message xmi:type="uml:Message" xmi:id="_Ao5zQDuXEee9HKMBVHI_vw" name="Starts program" receiveEvent="_ApDkQDuXEee9HKMBVHI_vw" sendEvent="_ApC9MDuXEee9HKMBVHI_vw"/>
+    <message xmi:type="uml:Message" xmi:id="_DCA_sDuXEee9HKMBVHI_vw" name="Connects to database" receiveEvent="_DCHGUDuXEee9HKMBVHI_vw" sendEvent="_DCFRIDuXEee9HKMBVHI_vw"/>
+    <message xmi:type="uml:Message" xmi:id="_VWRIQDuZEee9HKMBVHI_vw" name="Database not reachable response" receiveEvent="_VWTkgDuZEee9HKMBVHI_vw" sendEvent="_VWS9cDuZEee9HKMBVHI_vw"/>
+    <message xmi:type="uml:Message" xmi:id="_aKPNkDuZEee9HKMBVHI_vw" name="Show error message to administrator" receiveEvent="_aKUGEDuZEee9HKMBVHI_vw" sendEvent="_aKSQ4DuZEee9HKMBVHI_vw"/>
+    <message xmi:type="uml:Message" xmi:id="_xmhKcDucEee9FeQnwV78Kg" name="Admin Database-Entry not found" receiveEvent="_xmxCEDucEee9FeQnwV78Kg" sendEvent="_xmqUYDucEee9FeQnwV78Kg"/>
+    <message xmi:type="uml:Message" xmi:id="_0qNk8DucEee9FeQnwV78Kg" name="Show form for creating admin account" receiveEvent="_0qRPUDucEee9FeQnwV78Kg" sendEvent="_0qPaIDucEee9FeQnwV78Kg"/>
+    <message xmi:type="uml:Message" xmi:id="_5KTE8DucEee9FeQnwV78Kg" name="Admin Database-entry found" receiveEvent="_5KZLkDucEee9FeQnwV78Kg" sendEvent="_5KVhMDucEee9FeQnwV78Kg"/>
+    <message xmi:type="uml:Message" xmi:id="_7LSsUDucEee9FeQnwV78Kg" name="Present login page to user" receiveEvent="_7LVvoDucEee9FeQnwV78Kg" sendEvent="_7LUhgDucEee9FeQnwV78Kg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_SVCh8DxUEeeQeavaCVhKgA" name="Create default application configuration">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_U76dkDxUEeeQeavaCVhKgA" name="Administrator [Server Console]" coveredBy="_aWhsITxUEeeQeavaCVhKgA _d4IKoDxUEeeQeavaCVhKgA _d4R7oDxUEeeQeavaCVhKgA _pCMPUDxUEeeQeavaCVhKgA _51WDcjxUEeeQeavaCVhKgA _9lqTYTxUEeeQeavaCVhKgA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_Y5Zm0DxUEeeQeavaCVhKgA" name="Server" coveredBy="_aWhsIjxUEeeQeavaCVhKgA _51WDcTxUEeeQeavaCVhKgA _9lqTYDxUEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aWhsITxUEeeQeavaCVhKgA" name="MessageSend" covered="_U76dkDxUEeeQeavaCVhKgA" message="_aWhsIDxUEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_aWhsIjxUEeeQeavaCVhKgA" name="MessageRecv" covered="_Y5Zm0DxUEeeQeavaCVhKgA" message="_aWhsIDxUEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_d4IKoDxUEeeQeavaCVhKgA" name="CombinedFragment" covered="_U76dkDxUEeeQeavaCVhKgA">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_d4R7oDxUEeeQeavaCVhKgA" name="FaultyConfig" covered="_U76dkDxUEeeQeavaCVhKgA">
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_d4R7oTxUEeeQeavaCVhKgA" name="FaultyConfiguration">
+          <specification xmi:type="uml:Expression" xmi:id="_n2NkYDxUEeeQeavaCVhKgA" name="FaultyConfiguration" symbol="">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_n2NkYTxUEeeQeavaCVhKgA" name="ConfigurationFaulty" value="true"/>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_pCMPUTxUEeeQeavaCVhKgA" name="ConfigurationOk">
+          <specification xmi:type="uml:Expression" xmi:id="_3ry9ADxUEeeQeavaCVhKgA" name="ConfigurationOk" symbol="">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_3ry9ATxUEeeQeavaCVhKgA" name="FaultyConfig"/>
+          </specification>
+        </ownedRule>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_51WDcTxUEeeQeavaCVhKgA" name="MessageSend" covered="_Y5Zm0DxUEeeQeavaCVhKgA" message="_51WDcDxUEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_51WDcjxUEeeQeavaCVhKgA" name="MessageRecv" covered="_U76dkDxUEeeQeavaCVhKgA" message="_51WDcDxUEeeQeavaCVhKgA"/>
+      </operand>
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_pCMPUDxUEeeQeavaCVhKgA" name="InteractionOperand0" covered="_U76dkDxUEeeQeavaCVhKgA">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9lqTYDxUEeeQeavaCVhKgA" name="MessageSend" covered="_Y5Zm0DxUEeeQeavaCVhKgA" message="_9lhJcDxUEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_9lqTYTxUEeeQeavaCVhKgA" name="MessageRecv" covered="_U76dkDxUEeeQeavaCVhKgA" message="_9lhJcDxUEeeQeavaCVhKgA"/>
+      </operand>
+    </fragment>
+    <message xmi:type="uml:Message" xmi:id="_aWhsIDxUEeeQeavaCVhKgA" name="Sends defaut configuration" receiveEvent="_aWhsIjxUEeeQeavaCVhKgA" sendEvent="_aWhsITxUEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_51WDcDxUEeeQeavaCVhKgA" name="Sends error message to Admin console" receiveEvent="_51WDcjxUEeeQeavaCVhKgA" sendEvent="_51WDcTxUEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_9lhJcDxUEeeQeavaCVhKgA" name="Sends success message to admin console" receiveEvent="_9lqTYTxUEeeQeavaCVhKgA" sendEvent="_9lqTYDxUEeeQeavaCVhKgA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_LQg50DxVEeeQeavaCVhKgA" name="Create Account">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_NMEAgDxVEeeQeavaCVhKgA" name="Broswers [Admin Interface]" coveredBy="_D93WITxWEeeQeavaCVhKgA _K_lFYjxWEeeQeavaCVhKgA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_PccuwDxVEeeQeavaCVhKgA" name="Server" coveredBy="_B1WxgjxWEeeQeavaCVhKgA _D93WIDxWEeeQeavaCVhKgA _H5O_gTxWEeeQeavaCVhKgA _K_lFYTxWEeeQeavaCVhKgA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_QTH4EDxVEeeQeavaCVhKgA" name="Database" coveredBy="_B1WxgTxWEeeQeavaCVhKgA _H5O_gDxWEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_Wxhe4DxVEeeQeavaCVhKgA" name="AlternativeFlows" interactionOperator="alt">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_WzAsoDxVEeeQeavaCVhKgA" name="AdminNameInUse">
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_WzAsoTxVEeeQeavaCVhKgA" name="AdminNameInUse">
+          <specification xmi:type="uml:Expression" xmi:id="_rT1FUDxVEeeQeavaCVhKgA" name="AdminNameInUse">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_rT1FUTxVEeeQeavaCVhKgA" name="AdminNameInUse" value="true"/>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_zUSUwTxVEeeQeavaCVhKgA" name="AdminNameAvailable">
+          <specification xmi:type="uml:Expression" xmi:id="_53lpsDxVEeeQeavaCVhKgA" name="AdminNameAvailable">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_53lpsTxVEeeQeavaCVhKgA" name="AdminNameInUse"/>
+          </specification>
+        </ownedRule>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_B1WxgTxWEeeQeavaCVhKgA" name="MessageSend" covered="_QTH4EDxVEeeQeavaCVhKgA" message="_B1WxgDxWEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_B1WxgjxWEeeQeavaCVhKgA" name="MessageRecv" covered="_PccuwDxVEeeQeavaCVhKgA" message="_B1WxgDxWEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_D93WIDxWEeeQeavaCVhKgA" name="MessageSend0" covered="_PccuwDxVEeeQeavaCVhKgA" message="_D9tlIDxWEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_D93WITxWEeeQeavaCVhKgA" name="MessageRecv0" covered="_NMEAgDxVEeeQeavaCVhKgA" message="_D9tlIDxWEeeQeavaCVhKgA"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_u3gncDxVEeeQeavaCVhKgA" name="AdminNameInUse">
+          <specification xmi:type="uml:Expression" xmi:id="_xNaH0DxVEeeQeavaCVhKgA" name="AdminNameInUse">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_xNaH0TxVEeeQeavaCVhKgA" name="AdminNameInUse" value="true"/>
+          </specification>
+        </guard>
+      </operand>
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_zUSUwDxVEeeQeavaCVhKgA" name="AdminNameAvailable">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_H5O_gDxWEeeQeavaCVhKgA" name="MessageSend" covered="_QTH4EDxVEeeQeavaCVhKgA" message="_H5FOgDxWEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_H5O_gTxWEeeQeavaCVhKgA" name="MessageRecv" covered="_PccuwDxVEeeQeavaCVhKgA" message="_H5FOgDxWEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_K_lFYjxWEeeQeavaCVhKgA" name="MessageRecv0" covered="_NMEAgDxVEeeQeavaCVhKgA" message="_K_lFYDxWEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_K_lFYTxWEeeQeavaCVhKgA" name="MessageSend0" covered="_PccuwDxVEeeQeavaCVhKgA" message="_K_lFYDxWEeeQeavaCVhKgA"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_8XokkDxVEeeQeavaCVhKgA" name="AdminNameAvailable">
+          <specification xmi:type="uml:Expression" xmi:id="__XPwUDxVEeeQeavaCVhKgA" name="AdminNameAvailable">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="__XPwUTxVEeeQeavaCVhKgA" name="AdminNameInUse"/>
+          </specification>
+        </guard>
+      </operand>
+    </fragment>
+    <message xmi:type="uml:Message" xmi:id="_SMcKIDxVEeeQeavaCVhKgA" name="Sends data for creating new admin account"/>
+    <message xmi:type="uml:Message" xmi:id="_X6stcDxVEeeQeavaCVhKgA" name="Forwards data to database"/>
+    <message xmi:type="uml:Message" xmi:id="_B1WxgDxWEeeQeavaCVhKgA" name="Duplicate entry error" receiveEvent="_B1WxgjxWEeeQeavaCVhKgA" sendEvent="_B1WxgTxWEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_D9tlIDxWEeeQeavaCVhKgA" name="Show admin name in use error" receiveEvent="_D93WITxWEeeQeavaCVhKgA" sendEvent="_D93WIDxWEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_H5FOgDxWEeeQeavaCVhKgA" name="Admin account created" receiveEvent="_H5O_gTxWEeeQeavaCVhKgA" sendEvent="_H5O_gDxWEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_K_lFYDxWEeeQeavaCVhKgA" name="Shows success message to user" receiveEvent="_K_lFYjxWEeeQeavaCVhKgA" sendEvent="_K_lFYTxWEeeQeavaCVhKgA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_JfevIDxXEeeQeavaCVhKgA" name="Edit Admin account">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_bL_0MDxXEeeQeavaCVhKgA" name="Browsers [Administrator Interface]" coveredBy="_iV4oADxXEeeQeavaCVhKgA _04avEjxXEeeQeavaCVhKgA _r3EDUDxXEeeQeavaCVhKgA _N4ao0DxYEeeQeavaCVhKgA _r26SUDxXEeeQeavaCVhKgA _d1tzAjxYEeeQeavaCVhKgA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_e_ALwDxXEeeQeavaCVhKgA" name="Server" coveredBy="_iV4oATxXEeeQeavaCVhKgA _pfzRADxXEeeQeavaCVhKgA _r3EDUDxXEeeQeavaCVhKgA _r26SUDxXEeeQeavaCVhKgA _ybkSIDxXEeeQeavaCVhKgA _04avETxXEeeQeavaCVhKgA _N4ao0DxYEeeQeavaCVhKgA _a8EsYDxYEeeQeavaCVhKgA _d1tzATxYEeeQeavaCVhKgA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_f0qBYDxXEeeQeavaCVhKgA" name="Database" coveredBy="_pfzRATxXEeeQeavaCVhKgA _ybjrEDxXEeeQeavaCVhKgA _a77icTxYEeeQeavaCVhKgA _r3EDUDxXEeeQeavaCVhKgA _N4ao0DxYEeeQeavaCVhKgA _r26SUDxXEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_iV4oADxXEeeQeavaCVhKgA" name="MessageSend" covered="_bL_0MDxXEeeQeavaCVhKgA" message="_iUYzMDxXEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_iV4oATxXEeeQeavaCVhKgA" name="MessageRecv" covered="_e_ALwDxXEeeQeavaCVhKgA" message="_iUYzMDxXEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pfzRADxXEeeQeavaCVhKgA" name="MessageSend0" covered="_e_ALwDxXEeeQeavaCVhKgA" message="_pfqHEDxXEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_pfzRATxXEeeQeavaCVhKgA" name="MessageRecv0" covered="_f0qBYDxXEeeQeavaCVhKgA" message="_pfqHEDxXEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_r26SUDxXEeeQeavaCVhKgA" name="CombinedFragment" covered="_e_ALwDxXEeeQeavaCVhKgA _bL_0MDxXEeeQeavaCVhKgA _f0qBYDxXEeeQeavaCVhKgA" interactionOperator="alt">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_r3EDUDxXEeeQeavaCVhKgA" name="AdminDoesNotExist" covered="_e_ALwDxXEeeQeavaCVhKgA _bL_0MDxXEeeQeavaCVhKgA _f0qBYDxXEeeQeavaCVhKgA">
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_r3EDUTxXEeeQeavaCVhKgA" name="AdminDoesNotExist">
+          <specification xmi:type="uml:Expression" xmi:id="_HbyjoDxYEeeQeavaCVhKgA" name="AdminDoesNotExist">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_HbyjoTxYEeeQeavaCVhKgA" name="AdminDoesNotExist" value="true"/>
+          </specification>
+        </ownedRule>
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_N4jywDxYEeeQeavaCVhKgA" name="AdminExists">
+          <specification xmi:type="uml:LiteralBoolean" xmi:id="_TOjnEDxYEeeQeavaCVhKgA" name="AdminDoesNotExist"/>
+        </ownedRule>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ybjrEDxXEeeQeavaCVhKgA" name="MessageSend" covered="_f0qBYDxXEeeQeavaCVhKgA" message="_ybeykDxXEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_ybkSIDxXEeeQeavaCVhKgA" name="MessageRecv" covered="_e_ALwDxXEeeQeavaCVhKgA" message="_ybeykDxXEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_04avETxXEeeQeavaCVhKgA" name="MessageSend0" covered="_e_ALwDxXEeeQeavaCVhKgA" message="_04avEDxXEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_04avEjxXEeeQeavaCVhKgA" name="MessageRecv0" covered="_bL_0MDxXEeeQeavaCVhKgA" message="_04avEDxXEeeQeavaCVhKgA"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_JZHL8DxYEeeQeavaCVhKgA" name="AdminDoesNotExist">
+          <specification xmi:type="uml:Expression" xmi:id="_MZyHoDxYEeeQeavaCVhKgA" name="AdminDoesNotExist">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_MZyHoTxYEeeQeavaCVhKgA" name="AdminDoesNotExist" value="true"/>
+          </specification>
+        </guard>
+      </operand>
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_N4ao0DxYEeeQeavaCVhKgA" name="AdminExists" covered="_e_ALwDxXEeeQeavaCVhKgA _bL_0MDxXEeeQeavaCVhKgA _f0qBYDxXEeeQeavaCVhKgA">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_a77icTxYEeeQeavaCVhKgA" name="MessageSend" covered="_f0qBYDxXEeeQeavaCVhKgA" message="_a77icDxYEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_a8EsYDxYEeeQeavaCVhKgA" name="MessageRecv" covered="_e_ALwDxXEeeQeavaCVhKgA" message="_a77icDxYEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_d1tzATxYEeeQeavaCVhKgA" name="MessageSend0" covered="_e_ALwDxXEeeQeavaCVhKgA" message="_d1tzADxYEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_d1tzAjxYEeeQeavaCVhKgA" name="MessageRecv0" covered="_bL_0MDxXEeeQeavaCVhKgA" message="_d1tzADxYEeeQeavaCVhKgA"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_VsBvEDxYEeeQeavaCVhKgA" name="AdminExists">
+          <specification xmi:type="uml:Expression" xmi:id="_Y9tiQDxYEeeQeavaCVhKgA" name="AdminExists" symbol="">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_Y9tiQTxYEeeQeavaCVhKgA" name="AdminDoesNotExist"/>
+          </specification>
+        </guard>
+      </operand>
+    </fragment>
+    <message xmi:type="uml:Message" xmi:id="_iUYzMDxXEeeQeavaCVhKgA" name="Send new data for existing admin" receiveEvent="_iV4oATxXEeeQeavaCVhKgA" sendEvent="_iV4oADxXEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_pfqHEDxXEeeQeavaCVhKgA" name="Forward data to database" receiveEvent="_pfzRATxXEeeQeavaCVhKgA" sendEvent="_pfzRADxXEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_ybeykDxXEeeQeavaCVhKgA" name="Requested admin does not exist" receiveEvent="_ybkSIDxXEeeQeavaCVhKgA" sendEvent="_ybjrEDxXEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_04avEDxXEeeQeavaCVhKgA" name="Send admin does not exist error" receiveEvent="_04avEjxXEeeQeavaCVhKgA" sendEvent="_04avETxXEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_a77icDxYEeeQeavaCVhKgA" name="Admin edited successfully" receiveEvent="_a8EsYDxYEeeQeavaCVhKgA" sendEvent="_a77icTxYEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_d1tzADxYEeeQeavaCVhKgA" name="Send success message to user" receiveEvent="_d1tzAjxYEeeQeavaCVhKgA" sendEvent="_d1tzATxYEeeQeavaCVhKgA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_yYAyYDxYEeeQeavaCVhKgA" name="Remove Admin Account">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_1q3DMDxYEeeQeavaCVhKgA" name="Browser [Admin Interface]" coveredBy="_8MjOkDxYEeeQeavaCVhKgA _wUUm4jxZEeeQeavaCVhKgA _ELDWMDxZEeeQeavaCVhKgA _EK6MQDxZEeeQeavaCVhKgA _g9b8cDxZEeeQeavaCVhKgA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_4kqh4DxYEeeQeavaCVhKgA" name="Server" coveredBy="_8MjOkTxYEeeQeavaCVhKgA _BaodATxZEeeQeavaCVhKgA _ELDWMDxZEeeQeavaCVhKgA _EK6MQDxZEeeQeavaCVhKgA _PPc3wTxZEeeQeavaCVhKgA _g9b8cDxZEeeQeavaCVhKgA _tpFvsjxZEeeQeavaCVhKgA _wUUm4TxZEeeQeavaCVhKgA"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_5gbmkDxYEeeQeavaCVhKgA" name="Database" coveredBy="_BaodAjxZEeeQeavaCVhKgA _PPc3wDxZEeeQeavaCVhKgA _tpFvsTxZEeeQeavaCVhKgA _ELDWMDxZEeeQeavaCVhKgA _EK6MQDxZEeeQeavaCVhKgA _g9b8cDxZEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8MjOkDxYEeeQeavaCVhKgA" name="MessageSend" covered="_1q3DMDxYEeeQeavaCVhKgA" message="_8MZdkDxYEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8MjOkTxYEeeQeavaCVhKgA" name="MessageRecv" covered="_4kqh4DxYEeeQeavaCVhKgA" message="_8MZdkDxYEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BaodATxZEeeQeavaCVhKgA" name="MessageSend0" covered="_4kqh4DxYEeeQeavaCVhKgA" message="_BaodADxZEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_BaodAjxZEeeQeavaCVhKgA" name="MessageRecv0" covered="_5gbmkDxYEeeQeavaCVhKgA" message="_BaodADxZEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_EK6MQDxZEeeQeavaCVhKgA" name="AlternativeFlows" covered="_4kqh4DxYEeeQeavaCVhKgA _5gbmkDxYEeeQeavaCVhKgA _1q3DMDxYEeeQeavaCVhKgA" interactionOperator="alt">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_ELDWMDxZEeeQeavaCVhKgA" name="AdminDoesNotExist" covered="_4kqh4DxYEeeQeavaCVhKgA _5gbmkDxYEeeQeavaCVhKgA _1q3DMDxYEeeQeavaCVhKgA">
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_ELDWMTxZEeeQeavaCVhKgA" name="AdminDoesNotExist">
+          <specification xmi:type="uml:LiteralString" xmi:id="_ELDWMjxZEeeQeavaCVhKgA" value="undefined"/>
+        </ownedRule>
+        <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_g9ltcDxZEeeQeavaCVhKgA" name="AdminExists">
+          <specification xmi:type="uml:LiteralString" xmi:id="_g9ltcTxZEeeQeavaCVhKgA" value="undefined"/>
+        </ownedRule>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_PPc3wDxZEeeQeavaCVhKgA" name="MessageSend" covered="_5gbmkDxYEeeQeavaCVhKgA" message="_PPTGwDxZEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_PPc3wTxZEeeQeavaCVhKgA" name="MessageRecv" covered="_4kqh4DxYEeeQeavaCVhKgA" message="_PPTGwDxZEeeQeavaCVhKgA"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_eCa80DxZEeeQeavaCVhKgA" name="AdminDoesNotExist">
+          <specification xmi:type="uml:Expression" xmi:id="_gRBiYDxZEeeQeavaCVhKgA" name="AdminDoesNotExist">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_gRBiYTxZEeeQeavaCVhKgA" name="AdminDoesNotExist" value="true"/>
+          </specification>
+        </guard>
+      </operand>
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_g9b8cDxZEeeQeavaCVhKgA" name="AdminExists" covered="_4kqh4DxYEeeQeavaCVhKgA _5gbmkDxYEeeQeavaCVhKgA _1q3DMDxYEeeQeavaCVhKgA">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tpFvsTxZEeeQeavaCVhKgA" name="MessageSend" covered="_5gbmkDxYEeeQeavaCVhKgA" message="_tpFvsDxZEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_tpFvsjxZEeeQeavaCVhKgA" name="MessageRecv" covered="_4kqh4DxYEeeQeavaCVhKgA" message="_tpFvsDxZEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wUUm4TxZEeeQeavaCVhKgA" name="MessageSend0" covered="_4kqh4DxYEeeQeavaCVhKgA" message="_wUUm4DxZEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_wUUm4jxZEeeQeavaCVhKgA" name="MessageRecv0" covered="_1q3DMDxYEeeQeavaCVhKgA" message="_wUUm4DxZEeeQeavaCVhKgA"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_nIBPYDxZEeeQeavaCVhKgA" name="AdminDoesNotExist">
+          <specification xmi:type="uml:Expression" xmi:id="_oqXL4DxZEeeQeavaCVhKgA" name="AdminExists">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_qNxfYDxZEeeQeavaCVhKgA" name="AdminDoesNotExist"/>
+          </specification>
+        </guard>
+      </operand>
+    </fragment>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Rw_ncjxZEeeQeavaCVhKgA" name="MessageRecv0" message="_Rw_ncDxZEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Rw_ncTxZEeeQeavaCVhKgA" name="MessageSend0" message="_Rw_ncDxZEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_8MZdkDxYEeeQeavaCVhKgA" name="Send delete request" receiveEvent="_8MjOkTxYEeeQeavaCVhKgA" sendEvent="_8MjOkDxYEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_BaodADxZEeeQeavaCVhKgA" name="Forward delete request" receiveEvent="_BaodAjxZEeeQeavaCVhKgA" sendEvent="_BaodATxZEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_PPTGwDxZEeeQeavaCVhKgA" name="Admin does not exist error" receiveEvent="_PPc3wTxZEeeQeavaCVhKgA" sendEvent="_PPc3wDxZEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_Rw_ncDxZEeeQeavaCVhKgA" name="Send admin does not exist error to user" receiveEvent="_Rw_ncjxZEeeQeavaCVhKgA" sendEvent="_Rw_ncTxZEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_tpFvsDxZEeeQeavaCVhKgA" name="Admin deleted successfully" receiveEvent="_tpFvsjxZEeeQeavaCVhKgA" sendEvent="_tpFvsTxZEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_wUUm4DxZEeeQeavaCVhKgA" name="Show admin deleted success message" receiveEvent="_wUUm4jxZEeeQeavaCVhKgA" sendEvent="_wUUm4TxZEeeQeavaCVhKgA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interaction" xmi:id="_n21AsDxaEeeQeavaCVhKgA" name="Login">
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_pxD4wDxaEeeQeavaCVhKgA" name="Browser [Any user]" coveredBy="_0EWtgTxaEeeQeavaCVhKgA _EXouwTxbEeeQeavaCVhKgA _Ly-e8DxbEeeQeavaCVhKgA _8zTaoDxaEeeQeavaCVhKgA _8zmVkDxaEeeQeavaCVhKgA _-WVeMjxbEeeErqTqPzQd2w"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_su-bYDxaEeeQeavaCVhKgA" name="Server" coveredBy="_0EgegDxaEeeQeavaCVhKgA _3AThQTxaEeeQeavaCVhKgA _-x_78jxaEeeQeavaCVhKgA _EXouwDxbEeeQeavaCVhKgA _Ly-e8DxbEeeQeavaCVhKgA _8zTaoDxaEeeQeavaCVhKgA _8zmVkDxaEeeQeavaCVhKgA _8g4_gjxbEeeErqTqPzQd2w _-WVeMTxbEeeErqTqPzQd2w"/>
+    <lifeline xmi:type="uml:Lifeline" xmi:id="_xTqukDxaEeeQeavaCVhKgA" name="Database" coveredBy="_3AThQjxaEeeQeavaCVhKgA _-x_78TxaEeeQeavaCVhKgA _uvDAQTxbEeeErqTqPzQd2w _Ly-e8DxbEeeQeavaCVhKgA _8zTaoDxaEeeQeavaCVhKgA _8zmVkDxaEeeQeavaCVhKgA _8g4_gTxbEeeErqTqPzQd2w"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0EWtgTxaEeeQeavaCVhKgA" name="MessageSend" covered="_pxD4wDxaEeeQeavaCVhKgA" message="_0EWtgDxaEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0EgegDxaEeeQeavaCVhKgA" name="MessageRecv" covered="_su-bYDxaEeeQeavaCVhKgA" message="_0EWtgDxaEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3AThQTxaEeeQeavaCVhKgA" name="MessageSend0" covered="_su-bYDxaEeeQeavaCVhKgA" message="_3AThQDxaEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3AThQjxaEeeQeavaCVhKgA" name="MessageRecv0" covered="_xTqukDxaEeeQeavaCVhKgA" message="_3AThQDxaEeeQeavaCVhKgA"/>
+    <fragment xmi:type="uml:CombinedFragment" xmi:id="_8zTaoDxaEeeQeavaCVhKgA" name="AlternativeFlows" covered="_xTqukDxaEeeQeavaCVhKgA _su-bYDxaEeeQeavaCVhKgA _pxD4wDxaEeeQeavaCVhKgA" interactionOperator="alt">
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_8zmVkDxaEeeQeavaCVhKgA" name="InvalidCredentials" covered="_xTqukDxaEeeQeavaCVhKgA _su-bYDxaEeeQeavaCVhKgA _pxD4wDxaEeeQeavaCVhKgA">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-x_78TxaEeeQeavaCVhKgA" name="MessageSend" covered="_xTqukDxaEeeQeavaCVhKgA" message="_-x_78DxaEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-x_78jxaEeeQeavaCVhKgA" name="MessageRecv" covered="_su-bYDxaEeeQeavaCVhKgA" message="_-x_78DxaEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EXouwDxbEeeQeavaCVhKgA" name="MessageSend0" covered="_su-bYDxaEeeQeavaCVhKgA" message="_EXfk0DxbEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_EXouwTxbEeeQeavaCVhKgA" name="MessageRecv0" covered="_pxD4wDxaEeeQeavaCVhKgA" message="_EXfk0DxbEeeQeavaCVhKgA"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_h4rKwDxbEeeErqTqPzQd2w" name="InvalidCredentials">
+          <specification xmi:type="uml:Expression" xmi:id="_mtb6QDxbEeeErqTqPzQd2w" name="InvalidCredentials" symbol="">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_mtb6QTxbEeeErqTqPzQd2w" name="InvalidCredentials" value="true"/>
+          </specification>
+        </guard>
+      </operand>
+      <operand xmi:type="uml:InteractionOperand" xmi:id="_Ly-e8DxbEeeQeavaCVhKgA" name="ValidCredentials" covered="_xTqukDxaEeeQeavaCVhKgA _su-bYDxaEeeQeavaCVhKgA _pxD4wDxaEeeQeavaCVhKgA">
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-WVeMjxbEeeErqTqPzQd2w" name="MessageRecv0" covered="_pxD4wDxaEeeQeavaCVhKgA" message="_-WVeMDxbEeeErqTqPzQd2w"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uvDAQTxbEeeErqTqPzQd2w" name="MessageSend" covered="_xTqukDxaEeeQeavaCVhKgA"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8g4_gTxbEeeErqTqPzQd2w" name="MessageSend0" covered="_xTqukDxaEeeQeavaCVhKgA" message="_8g4_gDxbEeeErqTqPzQd2w"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_8g4_gjxbEeeErqTqPzQd2w" name="MessageRecv" covered="_su-bYDxaEeeQeavaCVhKgA" message="_8g4_gDxbEeeErqTqPzQd2w"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-WVeMTxbEeeErqTqPzQd2w" name="MessageSend1" covered="_su-bYDxaEeeQeavaCVhKgA" message="_-WVeMDxbEeeErqTqPzQd2w"/>
+        <guard xmi:type="uml:InteractionConstraint" xmi:id="_p0fKwDxbEeeErqTqPzQd2w" name="ValidCredentials">
+          <specification xmi:type="uml:Expression" xmi:id="_s3r2ADxbEeeErqTqPzQd2w" name="ValidCredentials">
+            <operand xmi:type="uml:LiteralBoolean" xmi:id="_s3r2ATxbEeeErqTqPzQd2w" name="InvalidCredentials"/>
+          </specification>
+        </guard>
+      </operand>
+    </fragment>
+    <message xmi:type="uml:Message" xmi:id="_0EWtgDxaEeeQeavaCVhKgA" name="User sends credentials to server" receiveEvent="_0EgegDxaEeeQeavaCVhKgA" sendEvent="_0EWtgTxaEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_3AThQDxaEeeQeavaCVhKgA" name="Checks credentials against database" receiveEvent="_3AThQjxaEeeQeavaCVhKgA" sendEvent="_3AThQTxaEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_-x_78DxaEeeQeavaCVhKgA" name="Invalid credentials" receiveEvent="_-x_78jxaEeeQeavaCVhKgA" sendEvent="_-x_78TxaEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_EXfk0DxbEeeQeavaCVhKgA" name="Show invalid credentials message" receiveEvent="_EXouwTxbEeeQeavaCVhKgA" sendEvent="_EXouwDxbEeeQeavaCVhKgA"/>
+    <message xmi:type="uml:Message" xmi:id="_8g4_gDxbEeeErqTqPzQd2w" name="Matching credentials found" receiveEvent="_8g4_gjxbEeeErqTqPzQd2w" sendEvent="_8g4_gTxbEeeErqTqPzQd2w"/>
+    <message xmi:type="uml:Message" xmi:id="_-WVeMDxbEeeErqTqPzQd2w" name="Login user session and redirect user" receiveEvent="_-WVeMjxbEeeErqTqPzQd2w" sendEvent="_-WVeMTxbEeeErqTqPzQd2w"/>
+  </packagedElement>
+</uml:Model>

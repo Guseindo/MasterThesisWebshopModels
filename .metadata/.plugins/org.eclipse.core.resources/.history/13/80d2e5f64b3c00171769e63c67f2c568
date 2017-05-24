@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Yj4LMDuCEeer__XDGGfa7g" name="RootElement">
+  <packagedElement xmi:type="uml:Actor" xmi:id="_YKkncDuPEeer__XDGGfa7g" name="Administrator"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ZhcTwDuPEeer__XDGGfa7g" name="StartUp">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_aNuK8DuPEeer__XDGGfa7g" name="StartUp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_adMKUDuPEeer__XDGGfa7g" name="Installation">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_adMKUTuPEeer__XDGGfa7g" name="StartUp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_cFHKYDuPEeer__XDGGfa7g" name="Modify Configuration">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_cFHKYTuPEeer__XDGGfa7g" name="StartUp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_fzlnQDuPEeer__XDGGfa7g" name="Create Default Configuration">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_fzlnQTuPEeer__XDGGfa7g" name="StartUp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_i65WcDuPEeer__XDGGfa7g" name="Shutdown">
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_i65WcTuPEeer__XDGGfa7g" name="StartUp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_lNvi0DuPEeer__XDGGfa7g" client="_YKkncDuPEeer__XDGGfa7g" supplier="_ZhcTwDuPEeer__XDGGfa7g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_lmn84DuPEeer__XDGGfa7g" client="_YKkncDuPEeer__XDGGfa7g" supplier="_adMKUDuPEeer__XDGGfa7g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_l-ecMDuPEeer__XDGGfa7g" client="_YKkncDuPEeer__XDGGfa7g" supplier="_cFHKYDuPEeer__XDGGfa7g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_nNU08DuPEeer__XDGGfa7g" client="_YKkncDuPEeer__XDGGfa7g" supplier="_fzlnQDuPEeer__XDGGfa7g"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_oFsAUDuPEeer__XDGGfa7g" client="_YKkncDuPEeer__XDGGfa7g" supplier="_i65WcDuPEeer__XDGGfa7g"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_S-7YADxKEeeQeavaCVhKgA" name="Administrator"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_YlILgDxKEeeQeavaCVhKgA" name="Login"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_aglyoDxKEeeQeavaCVhKgA" name="Logout"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_dIzLADxKEeeQeavaCVhKgA" name="Add Admin"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_gNVTADxKEeeQeavaCVhKgA" name="Edit Admin"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_kPSskDxKEeeQeavaCVhKgA" name="Remove Admin"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_p4eioDxKEeeQeavaCVhKgA" name="Add Employee"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_q_yI8DxKEeeQeavaCVhKgA" name="Edit Employee"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_tgz7QDxKEeeQeavaCVhKgA" name="Remove Employee"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_wfmnoDxKEeeQeavaCVhKgA" client="_S-7YADxKEeeQeavaCVhKgA" supplier="_kPSskDxKEeeQeavaCVhKgA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_xBWp0DxKEeeQeavaCVhKgA" client="_S-7YADxKEeeQeavaCVhKgA" supplier="_gNVTADxKEeeQeavaCVhKgA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_xq8ZYDxKEeeQeavaCVhKgA" client="_S-7YADxKEeeQeavaCVhKgA" supplier="_dIzLADxKEeeQeavaCVhKgA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_yTJo4DxKEeeQeavaCVhKgA" client="_S-7YADxKEeeQeavaCVhKgA" supplier="_aglyoDxKEeeQeavaCVhKgA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_1m0ZEDxKEeeQeavaCVhKgA" client="_S-7YADxKEeeQeavaCVhKgA" supplier="_YlILgDxKEeeQeavaCVhKgA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_220oYDxKEeeQeavaCVhKgA" client="_S-7YADxKEeeQeavaCVhKgA" supplier="_p4eioDxKEeeQeavaCVhKgA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="__EKdQDxKEeeQeavaCVhKgA" client="_S-7YADxKEeeQeavaCVhKgA" supplier="_tgz7QDxKEeeQeavaCVhKgA"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_GHAN4DxLEeeQeavaCVhKgA" name="Employee"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_KyqrwDxLEeeQeavaCVhKgA" name="Customer"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_OYHIcDxLEeeQeavaCVhKgA" client="_KyqrwDxLEeeQeavaCVhKgA" supplier="_aglyoDxKEeeQeavaCVhKgA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_SlwNkDxLEeeQeavaCVhKgA" client="_GHAN4DxLEeeQeavaCVhKgA" supplier="_YlILgDxKEeeQeavaCVhKgA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_UJLvMDxLEeeQeavaCVhKgA" client="_GHAN4DxLEeeQeavaCVhKgA" supplier="_aglyoDxKEeeQeavaCVhKgA"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_VtezgDxLEeeQeavaCVhKgA" client="_S-7YADxKEeeQeavaCVhKgA" supplier="_q_yI8DxKEeeQeavaCVhKgA"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_hLfu8DxLEeeQeavaCVhKgA" name="Remove Customer"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_vs4UwDxLEeeQeavaCVhKgA" client="_KyqrwDxLEeeQeavaCVhKgA" supplier="_YlILgDxKEeeQeavaCVhKgA"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_zhlVcDxLEeeQeavaCVhKgA" name="Edit Customer"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_1w4ekDxLEeeQeavaCVhKgA" name="Add Customer"/>
+</uml:Model>

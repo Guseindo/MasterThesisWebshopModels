@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_bJSXID4HEeeNEt7YbsVMlA" name="RootElement">
+  <packagedElement xmi:type="uml:Activity" xmi:id="_Gh7cID4IEeeNEt7YbsVMlA" name="Activity1"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_pqQykD7eEeemba3bmDC5IA" name="Views (JSP)">
+    <packagedElement xmi:type="uml:Class" xmi:id="_a78ukD7fEeemba3bmDC5IA" name="Login.jsp"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_bqkvID7fEeemba3bmDC5IA" name="OrderList.jsp"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_dAVoMD7fEeemba3bmDC5IA" name="Profile.jsp"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_rKZvoD7eEeemba3bmDC5IA" name="Controller">
+    <packagedElement xmi:type="uml:Class" xmi:id="_MiEe8D7fEeemba3bmDC5IA" name="ActionServlet">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_jk60ED8iEee5V-8lxPeD8w" name="requestprocessor" type="_3_9KUD8hEee5V-8lxPeD8w" association="_jk3JsD8iEee5V-8lxPeD8w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_CCh7ID8lEeeL575FWTVoxA" name="action" type="_sYQHYD8hEee5V-8lxPeD8w" aggregation="composite" association="_CCdCoD8lEeeL575FWTVoxA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_PLf_UD7fEeemba3bmDC5IA" name="LoginAction">
+      <generalization xmi:type="uml:Generalization" xmi:id="_ItTxED8lEeeL575FWTVoxA" general="_sYQHYD8hEee5V-8lxPeD8w"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_MDN88D8lEeeL575FWTVoxA" name="execute"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_Q5GwoD7fEeemba3bmDC5IA" name="DeleteCustomerAction">
+      <generalization xmi:type="uml:Generalization" xmi:id="_IVREgD8lEeeL575FWTVoxA" general="_sYQHYD8hEee5V-8lxPeD8w"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_JXgkoD8lEeeL575FWTVoxA" name="execute"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_SbP40D7fEeemba3bmDC5IA" name="DeleteOrderAction">
+      <generalization xmi:type="uml:Generalization" xmi:id="_ID95ID8lEeeL575FWTVoxA" general="_sYQHYD8hEee5V-8lxPeD8w"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_LWv4gD8lEeeL575FWTVoxA" name="execute"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3_9KUD8hEee5V-8lxPeD8w" name="RequestProcessor">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_6jA88D8hEee5V-8lxPeD8w" name="actions" visibility="private">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/EcorePrimitiveTypes.library.uml#EMap"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_jk6NAj8iEee5V-8lxPeD8w" name="actionservlet" type="_MiEe8D7fEeemba3bmDC5IA" association="_jk3JsD8iEee5V-8lxPeD8w"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_-CU1ED8kEeeL575FWTVoxA" name="action" type="_sYQHYD8hEee5V-8lxPeD8w" aggregation="composite" association="_-CP8kD8kEeeL575FWTVoxA"/>
+      <nestedClassifier xmi:type="uml:Class" xmi:id="_sYQHYD8hEee5V-8lxPeD8w" name="Action">
+        <ownedOperation xmi:type="uml:Operation" xmi:id="_u4XTsD8hEee5V-8lxPeD8w" name="saveErrors" visibility="protected"/>
+      </nestedClassifier>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_gxEsED8lEeeL575FWTVoxA" client="_PLf_UD7fEeemba3bmDC5IA" supplier="_YwlAYD8lEeeL575FWTVoxA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_h8OQkD8lEeeL575FWTVoxA" client="_Q5GwoD7fEeemba3bmDC5IA" supplier="_YwlAYD8lEeeL575FWTVoxA"/>
+    <packagedElement xmi:type="uml:Dependency" xmi:id="_3D5N4D8lEeeL575FWTVoxA" client="_SbP40D7fEeemba3bmDC5IA" supplier="_yXoTED8lEeeL575FWTVoxA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_sfky0D7eEeemba3bmDC5IA" name="Model">
+    <packagedElement xmi:type="uml:Class" xmi:id="_z0YdMD7eEeemba3bmDC5IA" name="AbstractUser" isAbstract="true">
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_mdQOkD7fEeemba3bmDC5IA" name="role" type="_kilRoD7fEeemba3bmDC5IA" association="_mdPAcD7fEeemba3bmDC5IA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_1gL3sD7eEeemba3bmDC5IA" name="Customer">
+      <generalization xmi:type="uml:Generalization" xmi:id="_6tZjcD7eEeemba3bmDC5IA" general="_z0YdMD7eEeemba3bmDC5IA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="__6J8MD7eEeemba3bmDC5IA" name="address" type="_99kTsD7eEeemba3bmDC5IA" association="__6EcoD7eEeemba3bmDC5IA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_FL7-4j7fEeemba3bmDC5IA" name="order" type="_9a8HwD7eEeemba3bmDC5IA" association="_FL3tcD7fEeemba3bmDC5IA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GfhGoD7fEeemba3bmDC5IA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GgLN8D7fEeemba3bmDC5IA" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_3QpvwD7eEeemba3bmDC5IA" name="Employee">
+      <generalization xmi:type="uml:Generalization" xmi:id="_7FU7QD7eEeemba3bmDC5IA" general="_z0YdMD7eEeemba3bmDC5IA"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_JUQfIj7fEeemba3bmDC5IA" name="order" type="_9a8HwD7eEeemba3bmDC5IA" association="_JUM0wD7fEeemba3bmDC5IA">
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_KiE9ID7fEeemba3bmDC5IA"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_KiGyUD7fEeemba3bmDC5IA" value="*"/>
+      </ownedAttribute>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_4jtTED7eEeemba3bmDC5IA" name="Admin">
+      <generalization xmi:type="uml:Generalization" xmi:id="_7eu5wD7eEeemba3bmDC5IA" general="_z0YdMD7eEeemba3bmDC5IA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_9a8HwD7eEeemba3bmDC5IA" name="Order"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_99kTsD7eEeemba3bmDC5IA" name="Address"/>
+    <packagedElement xmi:type="uml:Class" xmi:id="_kilRoD7fEeemba3bmDC5IA" name="Role"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="__6EcoD7eEeemba3bmDC5IA" memberEnd="__6J8MD7eEeemba3bmDC5IA __6LKUD7eEeemba3bmDC5IA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="__6Hf8D7eEeemba3bmDC5IA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="__6IHAD7eEeemba3bmDC5IA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="__6LKUD7eEeemba3bmDC5IA" name="customer" type="_1gL3sD7eEeemba3bmDC5IA" association="__6EcoD7eEeemba3bmDC5IA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_FL3tcD7fEeemba3bmDC5IA" memberEnd="_FL7-4j7fEeemba3bmDC5IA _FL_CMD7fEeemba3bmDC5IA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_FL7-4D7fEeemba3bmDC5IA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_FL7-4T7fEeemba3bmDC5IA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_FL_CMD7fEeemba3bmDC5IA" name="customer" type="_1gL3sD7eEeemba3bmDC5IA" association="_FL3tcD7fEeemba3bmDC5IA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_JUM0wD7fEeemba3bmDC5IA" memberEnd="_JUQfIj7fEeemba3bmDC5IA _JURGMD7fEeemba3bmDC5IA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_JUQfID7fEeemba3bmDC5IA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_JUQfIT7fEeemba3bmDC5IA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_JURGMD7fEeemba3bmDC5IA" name="employee" type="_3QpvwD7eEeemba3bmDC5IA" association="_JUM0wD7fEeemba3bmDC5IA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_mdPAcD7fEeemba3bmDC5IA" memberEnd="_mdQOkD7fEeemba3bmDC5IA _mdQOkT7fEeemba3bmDC5IA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_mdPngD7fEeemba3bmDC5IA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_mdPngT7fEeemba3bmDC5IA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_mdQOkT7fEeemba3bmDC5IA" name="abstractuser" type="_z0YdMD7eEeemba3bmDC5IA" association="_mdPAcD7fEeemba3bmDC5IA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_jk3JsD8iEee5V-8lxPeD8w" visibility="protected" memberEnd="_jk6NAj8iEee5V-8lxPeD8w _jk60ED8iEee5V-8lxPeD8w">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jk6NAD8iEee5V-8lxPeD8w" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_jk6NAT8iEee5V-8lxPeD8w" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-CP8kD8kEeeL575FWTVoxA" memberEnd="_-CU1ED8kEeeL575FWTVoxA _-CVcID8kEeeL575FWTVoxA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-CUOAD8kEeeL575FWTVoxA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-CUOAT8kEeeL575FWTVoxA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-CVcID8kEeeL575FWTVoxA" name="requestprocessor" type="_3_9KUD8hEee5V-8lxPeD8w" association="_-CP8kD8kEeeL575FWTVoxA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_CCdCoD8lEeeL575FWTVoxA" memberEnd="_CCh7ID8lEeeL575FWTVoxA _CCjJQD8lEeeL575FWTVoxA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_CCgtAD8lEeeL575FWTVoxA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_CChUED8lEeeL575FWTVoxA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_CCjJQD8lEeeL575FWTVoxA" name="actionservlet" type="_MiEe8D7fEeemba3bmDC5IA" association="_CCdCoD8lEeeL575FWTVoxA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_YwlAYD8lEeeL575FWTVoxA" name="UserDelegate">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bD1ccD8lEeeL575FWTVoxA" name="login"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_mLg7gD8lEeeL575FWTVoxA" name="deleteCustomer"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_k53tcD8lEeeL575FWTVoxA" client="_YwlAYD8lEeeL575FWTVoxA" supplier="_z0YdMD7eEeemba3bmDC5IA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_yXoTED8lEeeL575FWTVoxA" name="OrderDelegate">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_zVbYED8lEeeL575FWTVoxA" name="deleteOrder"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_0BqL8D8lEeeL575FWTVoxA" name="editOrder"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_0tKnED8lEeeL575FWTVoxA" name="createOrder"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Dependency" xmi:id="_3mfkoD8lEeeL575FWTVoxA" client="_yXoTED8lEeeL575FWTVoxA" supplier="_9a8HwD7eEeemba3bmDC5IA"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_KnyEQD8mEeeL575FWTVoxA" name="ActionForm">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_M-_zQj8mEeeL575FWTVoxA" name="actionservlet" type="_MiEe8D7fEeemba3bmDC5IA" association="_M-9XAD8mEeeL575FWTVoxA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_M-9XAD8mEeeL575FWTVoxA" memberEnd="_M-_zQj8mEeeL575FWTVoxA _M_BBYD8mEeeL575FWTVoxA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_M-_zQD8mEeeL575FWTVoxA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_M-_zQT8mEeeL575FWTVoxA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_M_BBYD8mEeeL575FWTVoxA" name="actionform" type="_KnyEQD8mEeeL575FWTVoxA" association="_M-9XAD8mEeeL575FWTVoxA"/>
+  </packagedElement>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_fha_kD4IEeeNEt7YbsVMlA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_fhc0wD4IEeeNEt7YbsVMlA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>

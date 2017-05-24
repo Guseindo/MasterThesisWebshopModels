@@ -162,4 +162,87 @@
     <node xmi:type="uml:OpaqueAction" xmi:id="_qpn-MD8oEeeL575FWTVoxA" name="User already exists user is shown in interface" incoming="_waHWID8oEeeL575FWTVoxA" outgoing="_5A7a8D8oEeeL575FWTVoxA"/>
     <node xmi:type="uml:OpaqueAction" xmi:id="_sysjgD8oEeeL575FWTVoxA" name="User created successfully" incoming="_0OYR8D8oEeeL575FWTVoxA" outgoing="_5iAHsD8oEeeL575FWTVoxA"/>
   </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_RCcGgEDGEeeAz7RsM0FQlw" name="LoginUpdated" node="_TKh0YEDGEeeAz7RsM0FQlw _UnuyMEDGEeeAz7RsM0FQlw _XYNVwEDGEeeAz7RsM0FQlw _Yn-UgEDGEeeAz7RsM0FQlw _bY5kAEDGEeeAz7RsM0FQlw _dlKAMEDGEeeAz7RsM0FQlw _exLHYEDGEeeAz7RsM0FQlw _hXQ_4EDGEeeAz7RsM0FQlw _iqeUMEDGEeeAz7RsM0FQlw _ltvQ4EDGEeeAz7RsM0FQlw">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_nEJqMEDGEeeAz7RsM0FQlw" target="_XYNVwEDGEeeAz7RsM0FQlw" source="_TKh0YEDGEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_nWy5YEDGEeeAz7RsM0FQlw" target="_Yn-UgEDGEeeAz7RsM0FQlw" source="_XYNVwEDGEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_nxn0MEDGEeeAz7RsM0FQlw" target="_bY5kAEDGEeeAz7RsM0FQlw" source="_Yn-UgEDGEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_oJloQEDGEeeAz7RsM0FQlw" target="_Yn-UgEDGEeeAz7RsM0FQlw" source="_dlKAMEDGEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_oeBnMEDGEeeAz7RsM0FQlw" target="_exLHYEDGEeeAz7RsM0FQlw" source="_iqeUMEDGEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_o46MYEDGEeeAz7RsM0FQlw" target="_hXQ_4EDGEeeAz7RsM0FQlw" source="_exLHYEDGEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_pPOaoEDGEeeAz7RsM0FQlw" target="_UnuyMEDGEeeAz7RsM0FQlw" source="_ltvQ4EDGEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_pneikEDGEeeAz7RsM0FQlw" name="credentials invalid" target="_dlKAMEDGEeeAz7RsM0FQlw" source="_bY5kAEDGEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_rKVccEDGEeeAz7RsM0FQlw" name="credentials valid" target="_exLHYEDGEeeAz7RsM0FQlw" source="_bY5kAEDGEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_saYIAEDGEeeAz7RsM0FQlw" name="two factor invalid" target="_iqeUMEDGEeeAz7RsM0FQlw" source="_hXQ_4EDGEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_tptB4EDGEeeAz7RsM0FQlw" name="two factor valid" target="_ltvQ4EDGEeeAz7RsM0FQlw" source="_hXQ_4EDGEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_TKh0YEDGEeeAz7RsM0FQlw" name="User navigates to website" outgoing="_nEJqMEDGEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_UnuyMEDGEeeAz7RsM0FQlw" name="Login finished" incoming="_pPOaoEDGEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_XYNVwEDGEeeAz7RsM0FQlw" name="Opens login form" incoming="_nEJqMEDGEeeAz7RsM0FQlw" outgoing="_nWy5YEDGEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_Yn-UgEDGEeeAz7RsM0FQlw" name="Fills in login credentials and sends form" incoming="_nWy5YEDGEeeAz7RsM0FQlw _oJloQEDGEeeAz7RsM0FQlw" outgoing="_nxn0MEDGEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_bY5kAEDGEeeAz7RsM0FQlw" name="Credential validation" incoming="_nxn0MEDGEeeAz7RsM0FQlw" outgoing="_pneikEDGEeeAz7RsM0FQlw _rKVccEDGEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_dlKAMEDGEeeAz7RsM0FQlw" name="Login error is shown" incoming="_pneikEDGEeeAz7RsM0FQlw" outgoing="_oJloQEDGEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_exLHYEDGEeeAz7RsM0FQlw" name="Ask user for two factor authentication credentials" incoming="_oeBnMEDGEeeAz7RsM0FQlw _rKVccEDGEeeAz7RsM0FQlw" outgoing="_o46MYEDGEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_hXQ_4EDGEeeAz7RsM0FQlw" name="Two factor validation" incoming="_o46MYEDGEeeAz7RsM0FQlw" outgoing="_saYIAEDGEeeAz7RsM0FQlw _tptB4EDGEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_iqeUMEDGEeeAz7RsM0FQlw" name="Two factor error is shown" incoming="_saYIAEDGEeeAz7RsM0FQlw" outgoing="_oeBnMEDGEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ltvQ4EDGEeeAz7RsM0FQlw" name="Login success is shown" incoming="_tptB4EDGEeeAz7RsM0FQlw" outgoing="_pPOaoEDGEeeAz7RsM0FQlw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_oF8o8EDHEeeAz7RsM0FQlw" name="CreateUserUpdated" node="_sp9msEDHEeeAz7RsM0FQlw _uRwq8EDHEeeAz7RsM0FQlw _vT75oEDHEeeAz7RsM0FQlw _xVT7gEDHEeeAz7RsM0FQlw _0Kh1IEDHEeeAz7RsM0FQlw _11wn4EDHEeeAz7RsM0FQlw _4cBfgEDHEeeAz7RsM0FQlw _CetFYEDIEeeAz7RsM0FQlw">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_5uo98EDHEeeAz7RsM0FQlw" target="_uRwq8EDHEeeAz7RsM0FQlw" source="_sp9msEDHEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_6ESd0EDHEeeAz7RsM0FQlw" target="_vT75oEDHEeeAz7RsM0FQlw" source="_uRwq8EDHEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_65xUUEDHEeeAz7RsM0FQlw" target="_xVT7gEDHEeeAz7RsM0FQlw" source="_vT75oEDHEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_8-u1sEDHEeeAz7RsM0FQlw" name="user already exists" target="_0Kh1IEDHEeeAz7RsM0FQlw" source="_xVT7gEDHEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_CAuI4EDIEeeAz7RsM0FQlw" target="_11wn4EDHEeeAz7RsM0FQlw" source="_xVT7gEDHEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Ebce4EDIEeeAz7RsM0FQlw" target="_CetFYEDIEeeAz7RsM0FQlw" source="_11wn4EDHEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_E1fWkEDIEeeAz7RsM0FQlw" target="_CetFYEDIEeeAz7RsM0FQlw" source="_0Kh1IEDHEeeAz7RsM0FQlw"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_FOPNwEDIEeeAz7RsM0FQlw" target="_4cBfgEDHEeeAz7RsM0FQlw" source="_CetFYEDIEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_sp9msEDHEeeAz7RsM0FQlw" name="User starts website" outgoing="_5uo98EDHEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_uRwq8EDHEeeAz7RsM0FQlw" name="Navigates to register form" incoming="_5uo98EDHEeeAz7RsM0FQlw" outgoing="_6ESd0EDHEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_vT75oEDHEeeAz7RsM0FQlw" name="Enters data" incoming="_6ESd0EDHEeeAz7RsM0FQlw" outgoing="_65xUUEDHEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_xVT7gEDHEeeAz7RsM0FQlw" name="Data validation" incoming="_65xUUEDHEeeAz7RsM0FQlw" outgoing="_8-u1sEDHEeeAz7RsM0FQlw _CAuI4EDIEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_0Kh1IEDHEeeAz7RsM0FQlw" name="Send email if user has forgotten his password" incoming="_8-u1sEDHEeeAz7RsM0FQlw" outgoing="_E1fWkEDIEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_11wn4EDHEeeAz7RsM0FQlw" name="User created successfully" incoming="_CAuI4EDIEeeAz7RsM0FQlw" outgoing="_Ebce4EDIEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_4cBfgEDHEeeAz7RsM0FQlw" name="Creating user finished" incoming="_FOPNwEDIEeeAz7RsM0FQlw"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_CetFYEDIEeeAz7RsM0FQlw" name="" incoming="_Ebce4EDIEeeAz7RsM0FQlw _E1fWkEDIEeeAz7RsM0FQlw" outgoing="_FOPNwEDIEeeAz7RsM0FQlw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_WVCH4EDOEeervcNYviMg2w" name="DeleteUserUpdated" node="_ZhYvIEDOEeervcNYviMg2w _a5gYoEDOEeervcNYviMg2w _b_ZpsEDOEeervcNYviMg2w _ddszsEDOEeervcNYviMg2w _eeFSoEDOEeervcNYviMg2w _gY2WMEDOEeervcNYviMg2w _lZatEEDOEeervcNYviMg2w _rIQfMEDOEeervcNYviMg2w _uTKU8EDOEeervcNYviMg2w">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_nCe8oEDOEeervcNYviMg2w" target="_a5gYoEDOEeervcNYviMg2w" source="_ZhYvIEDOEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_nYLf0EDOEeervcNYviMg2w" target="_b_ZpsEDOEeervcNYviMg2w" source="_a5gYoEDOEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_oFgf4EDOEeervcNYviMg2w" target="_ddszsEDOEeervcNYviMg2w" source="_b_ZpsEDOEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ocsQ0EDOEeervcNYviMg2w" target="_lZatEEDOEeervcNYviMg2w" source="_ddszsEDOEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_su_zgEDOEeervcNYviMg2w" name="customer" target="_rIQfMEDOEeervcNYviMg2w" source="_lZatEEDOEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_tH7Q4EDOEeervcNYviMg2w" name="other user" target="_eeFSoEDOEeervcNYviMg2w" source="_lZatEEDOEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vYK1MEDOEeervcNYviMg2w" target="_gY2WMEDOEeervcNYviMg2w" source="_uTKU8EDOEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_vqQqwEDOEeervcNYviMg2w" target="_uTKU8EDOEeervcNYviMg2w" source="_eeFSoEDOEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_wCngYEDOEeervcNYviMg2w" target="_uTKU8EDOEeervcNYviMg2w" source="_rIQfMEDOEeervcNYviMg2w"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_ZhYvIEDOEeervcNYviMg2w" name="User navigates to website" outgoing="_nCe8oEDOEeervcNYviMg2w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_a5gYoEDOEeervcNYviMg2w" name="User navigates to his profile page" incoming="_nCe8oEDOEeervcNYviMg2w" outgoing="_nYLf0EDOEeervcNYviMg2w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_b_ZpsEDOEeervcNYviMg2w" name="User presses delete profile button" incoming="_nYLf0EDOEeervcNYviMg2w" outgoing="_oFgf4EDOEeervcNYviMg2w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_ddszsEDOEeervcNYviMg2w" name="User confirms deletion" incoming="_oFgf4EDOEeervcNYviMg2w" outgoing="_ocsQ0EDOEeervcNYviMg2w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_eeFSoEDOEeervcNYviMg2w" name="User is deleted" incoming="_tH7Q4EDOEeervcNYviMg2w" outgoing="_vqQqwEDOEeervcNYviMg2w"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_gY2WMEDOEeervcNYviMg2w" name="User deletion finished" incoming="_vYK1MEDOEeervcNYviMg2w"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_lZatEEDOEeervcNYviMg2w" name="User type validation" incoming="_ocsQ0EDOEeervcNYviMg2w" outgoing="_su_zgEDOEeervcNYviMg2w _tH7Q4EDOEeervcNYviMg2w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_rIQfMEDOEeervcNYviMg2w" name="Store delete request in database" incoming="_su_zgEDOEeervcNYviMg2w" outgoing="_wCngYEDOEeervcNYviMg2w"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_uTKU8EDOEeervcNYviMg2w" name="" incoming="_vqQqwEDOEeervcNYviMg2w _wCngYEDOEeervcNYviMg2w" outgoing="_vYK1MEDOEeervcNYviMg2w"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Activity" xmi:id="_1ZeQUEDOEeervcNYviMg2w" name="DeleteOrderUpdated" node="_4CQ3gEDOEeervcNYviMg2w _5KqC8EDOEeervcNYviMg2w _50SOwEDOEeervcNYviMg2w _CCLdQEDPEeervcNYviMg2w _D6XG4EDPEeervcNYviMg2w _E6oREEDPEeervcNYviMg2w _GVqEoEDPEeervcNYviMg2w _TtMGcEDPEeervcNYviMg2w _U6zJEEDPEeervcNYviMg2w">
+    <edge xmi:type="uml:ControlFlow" xmi:id="_H6_qwEDPEeervcNYviMg2w" target="_D6XG4EDPEeervcNYviMg2w" source="_GVqEoEDPEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_IbxckEDPEeervcNYviMg2w" target="_CCLdQEDPEeervcNYviMg2w" source="_D6XG4EDPEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_JQVtEEDPEeervcNYviMg2w" name="customer" target="_GVqEoEDPEeervcNYviMg2w" source="_E6oREEDPEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_WJ71sEDPEeervcNYviMg2w" target="_D6XG4EDPEeervcNYviMg2w" source="_U6zJEEDPEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_Wi0PwEDPEeervcNYviMg2w" name="Order is not processed yet" target="_U6zJEEDPEeervcNYviMg2w" source="_TtMGcEDPEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_ZbZmcEDPEeervcNYviMg2w" name="Order is old and has already been shipped to customer" target="_U6zJEEDPEeervcNYviMg2w" source="_TtMGcEDPEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_a2qqkEDPEeervcNYviMg2w" target="_E6oREEDPEeervcNYviMg2w" source="_50SOwEDOEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_b083wEDPEeervcNYviMg2w" name="other user type" target="_TtMGcEDPEeervcNYviMg2w" source="_E6oREEDPEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_dCMuAEDPEeervcNYviMg2w" target="_5KqC8EDOEeervcNYviMg2w" source="_4CQ3gEDOEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_dUYqMEDPEeervcNYviMg2w" target="_50SOwEDOEeervcNYviMg2w" source="_5KqC8EDOEeervcNYviMg2w"/>
+    <edge xmi:type="uml:ControlFlow" xmi:id="_eWfAYEDPEeervcNYviMg2w" name="order is alread in transport" target="_5KqC8EDOEeervcNYviMg2w" source="_TtMGcEDPEeervcNYviMg2w"/>
+    <node xmi:type="uml:InitialNode" xmi:id="_4CQ3gEDOEeervcNYviMg2w" name="User starts website" outgoing="_dCMuAEDPEeervcNYviMg2w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_5KqC8EDOEeervcNYviMg2w" name="Navigates to order overview" incoming="_dCMuAEDPEeervcNYviMg2w _eWfAYEDPEeervcNYviMg2w" outgoing="_dUYqMEDPEeervcNYviMg2w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_50SOwEDOEeervcNYviMg2w" name="Selects order to delete" incoming="_dUYqMEDPEeervcNYviMg2w" outgoing="_a2qqkEDPEeervcNYviMg2w"/>
+    <node xmi:type="uml:ActivityFinalNode" xmi:id="_CCLdQEDPEeervcNYviMg2w" name="Order deletion complete" incoming="_IbxckEDPEeervcNYviMg2w"/>
+    <node xmi:type="uml:MergeNode" xmi:id="_D6XG4EDPEeervcNYviMg2w" name="" incoming="_H6_qwEDPEeervcNYviMg2w _WJ71sEDPEeervcNYviMg2w" outgoing="_IbxckEDPEeervcNYviMg2w"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_E6oREEDPEeervcNYviMg2w" name="User type validation" incoming="_a2qqkEDPEeervcNYviMg2w" outgoing="_JQVtEEDPEeervcNYviMg2w _b083wEDPEeervcNYviMg2w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_GVqEoEDPEeervcNYviMg2w" name="Order delete request is stored" incoming="_JQVtEEDPEeervcNYviMg2w" outgoing="_H6_qwEDPEeervcNYviMg2w"/>
+    <node xmi:type="uml:DecisionNode" xmi:id="_TtMGcEDPEeervcNYviMg2w" name="Delete Evaluation" incoming="_b083wEDPEeervcNYviMg2w" outgoing="_Wi0PwEDPEeervcNYviMg2w _ZbZmcEDPEeervcNYviMg2w _eWfAYEDPEeervcNYviMg2w"/>
+    <node xmi:type="uml:OpaqueAction" xmi:id="_U6zJEEDPEeervcNYviMg2w" name="Confirms order deletion" incoming="_Wi0PwEDPEeervcNYviMg2w _ZbZmcEDPEeervcNYviMg2w" outgoing="_WJ71sEDPEeervcNYviMg2w"/>
+  </packagedElement>
 </uml:Model>

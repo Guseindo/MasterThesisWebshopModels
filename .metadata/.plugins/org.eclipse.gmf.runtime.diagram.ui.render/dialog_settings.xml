@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="CopyToImageDialog">
 		<item value="false" key="CopyToImageDialog.overwriteExisting"/>
+		<item value="C:\Users\domin\Desktop\University of Gothenburg\4. Semester\Own Thesis\Validation\Models webshop\Updated models\Scenario 1" key="CopyToImageDialog.folder"/>
 		<item value="pdf" key="CopyToImageDialog.imageFormat"/>
 		<item value="false" key="CopyToImageDialog.exportToHTML"/>
 	</section>

@@ -2,19 +2,19 @@
 <uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_Yj4LMDuCEeer__XDGGfa7g" name="RootElement">
   <packagedElement xmi:type="uml:Actor" xmi:id="_YKkncDuPEeer__XDGGfa7g" name="Administrator"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_ZhcTwDuPEeer__XDGGfa7g" name="StartUp">
-    <ownedUseCase xmi:id="_aNuK8DuPEeer__XDGGfa7g" name="StartUp"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_aNuK8DuPEeer__XDGGfa7g" name="StartUp"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_adMKUDuPEeer__XDGGfa7g" name="Installation">
-    <ownedUseCase xmi:id="_adMKUTuPEeer__XDGGfa7g" name="StartUp"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_adMKUTuPEeer__XDGGfa7g" name="StartUp"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_cFHKYDuPEeer__XDGGfa7g" name="Modify Configuration">
-    <ownedUseCase xmi:id="_cFHKYTuPEeer__XDGGfa7g" name="StartUp"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_cFHKYTuPEeer__XDGGfa7g" name="StartUp"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_fzlnQDuPEeer__XDGGfa7g" name="Create Default Configuration">
-    <ownedUseCase xmi:id="_fzlnQTuPEeer__XDGGfa7g" name="StartUp"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_fzlnQTuPEeer__XDGGfa7g" name="StartUp"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_i65WcDuPEeer__XDGGfa7g" name="Shutdown">
-    <ownedUseCase xmi:id="_i65WcTuPEeer__XDGGfa7g" name="StartUp"/>
+    <ownedUseCase xmi:type="uml:UseCase" xmi:id="_i65WcTuPEeer__XDGGfa7g" name="StartUp"/>
   </packagedElement>
   <packagedElement xmi:type="uml:Usage" xmi:id="_lNvi0DuPEeer__XDGGfa7g" client="_YKkncDuPEeer__XDGGfa7g" supplier="_ZhcTwDuPEeer__XDGGfa7g"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_lmn84DuPEeer__XDGGfa7g" client="_YKkncDuPEeer__XDGGfa7g" supplier="_adMKUDuPEeer__XDGGfa7g"/>
@@ -63,8 +63,8 @@
   <packagedElement xmi:type="uml:Actor" xmi:id="_4wIBcDxMEeeQeavaCVhKgA" name="Customer"/>
   <packagedElement xmi:type="uml:Actor" xmi:id="_5x8DwDxMEeeQeavaCVhKgA" name="Employee"/>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_76baQDxMEeeQeavaCVhKgA" name="Search products by customer">
-    <extensionPoint xmi:id="_FdGDUTxNEeeQeavaCVhKgA" name="ExtensionPoint1"/>
-    <extensionPoint xmi:id="_GFCNEDxNEeeQeavaCVhKgA" name="ExtensionPoint2"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_FdGDUTxNEeeQeavaCVhKgA" name="ExtensionPoint1"/>
+    <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_GFCNEDxNEeeQeavaCVhKgA" name="ExtensionPoint2"/>
   </packagedElement>
   <packagedElement xmi:type="uml:UseCase" xmi:id="_fhtbwDxNEeeQeavaCVhKgA" name="Search products by employee"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_jENSIDxNEeeQeavaCVhKgA" client="_5x8DwDxMEeeQeavaCVhKgA" supplier="_fhtbwDxNEeeQeavaCVhKgA"/>
@@ -85,4 +85,49 @@
   <packagedElement xmi:type="uml:Usage" xmi:id="_LM4bMDxOEeeQeavaCVhKgA" client="_qKZRsDxNEeeQeavaCVhKgA" supplier="_tH8n8DxNEeeQeavaCVhKgA"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_MT0OEDxOEeeQeavaCVhKgA" client="_qKZRsDxNEeeQeavaCVhKgA" supplier="_zqz4ADxNEeeQeavaCVhKgA"/>
   <packagedElement xmi:type="uml:Usage" xmi:id="_NQTEcDxOEeeQeavaCVhKgA" client="_qKZRsDxNEeeQeavaCVhKgA" supplier="_vVqcsDxNEeeQeavaCVhKgA"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ZZOuIEDNEeervcNYviMg2w" name="Administrator"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_ayaHkEDNEeervcNYviMg2w" name="Employee"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_bcUAMEDNEeervcNYviMg2w" name="Customer"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_dBvF4EDNEeervcNYviMg2w" name="Login"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_djqHMEDNEeervcNYviMg2w" name="Logout"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_egDeAEDNEeervcNYviMg2w" name="Add Employee"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_fuWdIEDNEeervcNYviMg2w" name="Edit Employee"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_gxUWAEDNEeervcNYviMg2w" name="Remove Employee"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_jyKQ0EDNEeervcNYviMg2w" name="Add Admin"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_kjvewEDNEeervcNYviMg2w" name="EditAdmin"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_lsiS0EDNEeervcNYviMg2w" name="RemoveAdmin"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_nsNEgEDNEeervcNYviMg2w" name="Add Customer"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_ocJTsEDNEeervcNYviMg2w" name="Edit Customer"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_pEuWoEDNEeervcNYviMg2w" name="Remove Customer"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_rh91IEDNEeervcNYviMg2w" client="_ZZOuIEDNEeervcNYviMg2w" supplier="_lsiS0EDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_r09CkEDNEeervcNYviMg2w" client="_ZZOuIEDNEeervcNYviMg2w" supplier="_kjvewEDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_sJOpcEDNEeervcNYviMg2w" client="_ZZOuIEDNEeervcNYviMg2w" supplier="_jyKQ0EDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_saYq4EDNEeervcNYviMg2w" client="_ZZOuIEDNEeervcNYviMg2w" supplier="_djqHMEDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_ssoRcEDNEeervcNYviMg2w" client="_ZZOuIEDNEeervcNYviMg2w" supplier="_dBvF4EDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_tw5x4EDNEeervcNYviMg2w" client="_ZZOuIEDNEeervcNYviMg2w" supplier="_egDeAEDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_ugbKUEDNEeervcNYviMg2w" client="_ZZOuIEDNEeervcNYviMg2w" supplier="_fuWdIEDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_vKFyYEDNEeervcNYviMg2w" client="_ZZOuIEDNEeervcNYviMg2w" supplier="_gxUWAEDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_ww1twEDNEeervcNYviMg2w" client="_bcUAMEDNEeervcNYviMg2w" supplier="_djqHMEDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_xbSY8EDNEeervcNYviMg2w" client="_ayaHkEDNEeervcNYviMg2w" supplier="_dBvF4EDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_ycAPEEDNEeervcNYviMg2w" client="_ayaHkEDNEeervcNYviMg2w" supplier="_djqHMEDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_1Ue4EEDNEeervcNYviMg2w" client="_bcUAMEDNEeervcNYviMg2w" supplier="_dBvF4EDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_18NmcEDNEeervcNYviMg2w" client="_bcUAMEDNEeervcNYviMg2w" supplier="_ocJTsEDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_2YkyUEDNEeervcNYviMg2w" client="_bcUAMEDNEeervcNYviMg2w" supplier="_nsNEgEDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_3cAlQEDNEeervcNYviMg2w" client="_ayaHkEDNEeervcNYviMg2w" supplier="_nsNEgEDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_4FDiQEDNEeervcNYviMg2w" client="_ayaHkEDNEeervcNYviMg2w" supplier="_ocJTsEDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_40YtcEDNEeervcNYviMg2w" client="_ayaHkEDNEeervcNYviMg2w" supplier="_pEuWoEDNEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_A6GQUEDOEeervcNYviMg2w" name="Place order by customer"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_BzNCkEDOEeervcNYviMg2w" name="View order by customer"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_DKxScEDOEeervcNYviMg2w" name="Place order by employee"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_E20kkEDOEeervcNYviMg2w" name="View order by employee"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_GUh4sEDOEeervcNYviMg2w" name="Edit order by employee"/>
+  <packagedElement xmi:type="uml:UseCase" xmi:id="_HwA_QEDOEeervcNYviMg2w" name="Remove order by employee"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_KKRbMEDOEeervcNYviMg2w" name="Employee"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_K86ZEEDOEeervcNYviMg2w" name="Customer"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_MAIJkEDOEeervcNYviMg2w" client="_K86ZEEDOEeervcNYviMg2w" supplier="_A6GQUEDOEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_M5MfkEDOEeervcNYviMg2w" client="_K86ZEEDOEeervcNYviMg2w" supplier="_BzNCkEDOEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_NxahAEDOEeervcNYviMg2w" client="_KKRbMEDOEeervcNYviMg2w" supplier="_DKxScEDOEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_OiDTwEDOEeervcNYviMg2w" client="_KKRbMEDOEeervcNYviMg2w" supplier="_E20kkEDOEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_PN8wcEDOEeervcNYviMg2w" client="_KKRbMEDOEeervcNYviMg2w" supplier="_GUh4sEDOEeervcNYviMg2w"/>
+  <packagedElement xmi:type="uml:Usage" xmi:id="_QDPZsEDOEeervcNYviMg2w" client="_KKRbMEDOEeervcNYviMg2w" supplier="_HwA_QEDOEeervcNYviMg2w"/>
 </uml:Model>
